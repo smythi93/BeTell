@@ -15,6 +15,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -e . pytest
-      - uses: smythi93/BeTell@v0.1.0
+      - uses: smythi93/BeTell@v0.1.1
         with:
           pytest-args: tests

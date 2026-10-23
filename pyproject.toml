@@ -1,17 +1,22 @@
 [build-system]
-requires = ["setuptools>=61", "wheel"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "betell"
-version = "0.1.0"
+version = "0.1.1"
 description = "Shows how a pull request changes runtime behavior, including silent changes in code the diff never touches"
 readme = "README.md"
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [{ name = "Marius Smytzek", email = "marius.smytzek@cispa.de" }]
 requires-python = ">=3.9"
 dependencies = ["pytest>=6"]
+keywords = ["code review", "pull request", "regression", "pytest", "behavioral diff"]
 classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Topic :: Software Development :: Testing",
     "Topic :: Software Development :: Quality Assurance",
@@ -20,6 +25,7 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/smythi93/BeTell"
 Documentation = "https://github.com/smythi93/BeTell/tree/main/docs"
+Issues = "https://github.com/smythi93/BeTell/issues"
 
 [project.scripts]
 betell = "betell.cli:main"

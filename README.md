@@ -3,7 +3,7 @@
 **Behavioral evidence for human and AI code review.**
 
 [![Tests](https://github.com/smythi93/BeTell/actions/workflows/tests.yml/badge.svg)](https://github.com/smythi93/BeTell/actions/workflows/tests.yml)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/smythi93/BeTell/blob/main/LICENSE)
 ![Python](https://img.shields.io/badge/python-3.6%2B-blue.svg)
 
 A textual diff shows which lines a pull request edits.
@@ -54,19 +54,19 @@ docker run --rm ghcr.io/smythi93/betell demo threshold
 ```
 
 The demo builds a small repository, prints the textual diff of the pull request, and then prints BeTell's report.
-The other scenarios are `refactor`, `shift`, `helper`, `exception`, and `outcome` (see [docs/usage.md](docs/usage.md#demo)).
+The other scenarios are `refactor`, `shift`, `helper`, `exception`, and `outcome` (see [docs/usage.md](https://github.com/smythi93/BeTell/blob/main/docs/usage.md#demo)).
 
 ## Use it on your project
 
 Install BeTell into the environment that runs your tests and compare two revisions.
 
 ```bash
-pip install git+https://github.com/smythi93/BeTell
+pip install betell
 betell run --base main --head HEAD --pytest-args tests --out report.md
 ```
 
 BeTell checks out both revisions in temporary worktrees, so your working tree stays untouched.
-See [docs/usage.md](docs/usage.md) for all options, for projects that must be installed or compiled, and for test environments with older Python versions.
+See [docs/usage.md](https://github.com/smythi93/BeTell/blob/main/docs/usage.md) for all options, for projects that must be installed or compiled, and for test environments with older Python versions.
 
 ## Use it on every pull request
 
@@ -89,14 +89,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -e . pytest
-      - uses: smythi93/BeTell@v0.1.0
+      - uses: smythi93/BeTell@v0.1.1
         with:
           pytest-args: tests
 ```
 
 On every pull request, the action records both revisions, writes the report to the job summary, and posts it as a comment.
 When the author pushes new commits, it updates its comment.
-See [docs/github-action.md](docs/github-action.md) for inputs, outputs, and pull requests from forks.
+See [docs/github-action.md](https://github.com/smythi93/BeTell/blob/main/docs/github-action.md) for inputs, outputs, and pull requests from forks.
 
 ## What BeTell records
 
@@ -113,7 +113,7 @@ For every test, BeTell records five kinds of behavior of your project's own code
 Each revision runs twice, and BeTell ignores everything that differs between runs of the same code, such as time stamps and random numbers.
 It aligns the lines of edited files, so code that only moves does not show up as a change.
 Every change is attributed to a function, which is either *edited* by the pull request or not, and the change is *silent* if it occurs in a test whose outcome stays the same.
-[docs/how-it-works.md](docs/how-it-works.md) explains the details, and [docs/report.md](docs/report.md) explains how to read the report.
+[docs/how-it-works.md](https://github.com/smythi93/BeTell/blob/main/docs/how-it-works.md) explains the details, and [docs/report.md](https://github.com/smythi93/BeTell/blob/main/docs/report.md) explains how to read the report.
 
 ## Requirements
 
@@ -124,11 +124,11 @@ Every change is attributed to a function, which is either *edited* by the pull r
 
 ## Documentation
 
-- [Usage](docs/usage.md): commands, options, the demo, and the pytest plugin
-- [GitHub Action](docs/github-action.md): workflow setup, inputs, and outputs
-- [Reading the report](docs/report.md): sections, change kinds, and the JSON format
-- [How it works](docs/how-it-works.md): recording, noise filtering, alignment, and limitations
-- [Evaluation](docs/evaluation.md): reproducing the results on SWE-bench Verified and real commits
+- [Usage](https://github.com/smythi93/BeTell/blob/main/docs/usage.md): commands, options, the demo, and the pytest plugin
+- [GitHub Action](https://github.com/smythi93/BeTell/blob/main/docs/github-action.md): workflow setup, inputs, and outputs
+- [Reading the report](https://github.com/smythi93/BeTell/blob/main/docs/report.md): sections, change kinds, and the JSON format
+- [How it works](https://github.com/smythi93/BeTell/blob/main/docs/how-it-works.md): recording, noise filtering, alignment, and limitations
+- [Evaluation](https://github.com/smythi93/BeTell/blob/main/docs/evaluation.md): reproducing the results on SWE-bench Verified and real commits
 
 ## Development
 
@@ -142,4 +142,4 @@ The tests run every demo scenario and the nondeterminism filter with both record
 
 ## License
 
-BeTell is licensed under the [Apache License 2.0](LICENSE).
+BeTell is licensed under the [Apache License 2.0](https://github.com/smythi93/BeTell/blob/main/LICENSE).

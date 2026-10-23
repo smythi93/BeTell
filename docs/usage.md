@@ -6,10 +6,10 @@ For continuous integration, see [github-action.md](github-action.md).
 
 ## Installation
 
-BeTell is not on PyPI yet. Install it from GitHub into the environment that runs your tests.
+Install BeTell from PyPI into the environment that runs your tests.
 
 ```bash
-pip install git+https://github.com/smythi93/BeTell
+pip install betell
 ```
 
 The `betell` command needs Python 3.9 or later and git.

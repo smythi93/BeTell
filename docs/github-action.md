@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -e . pytest
-      - uses: smythi93/BeTell@v0.1.0
+      - uses: smythi93/BeTell@v0.1.1
         with:
           pytest-args: tests
 ```
@@ -57,7 +57,7 @@ The action also writes the comparison as JSON to `betell-report.json` in the wor
 To keep both files, upload them as an artifact.
 
 ```yaml
-      - uses: smythi93/BeTell@v0.1.0
+      - uses: smythi93/BeTell@v0.1.1
         id: betell
         with:
           pytest-args: tests
@@ -85,7 +85,7 @@ For pull requests from forks, GitHub gives the workflow a read-only token, so th
 Restrict comments to pull requests from the same repository, and read the report of forks in the job summary.
 
 ```yaml
-      - uses: smythi93/BeTell@v0.1.0
+      - uses: smythi93/BeTell@v0.1.1
         with:
           pytest-args: tests
           comment: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
