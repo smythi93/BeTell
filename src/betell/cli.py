@@ -33,6 +33,11 @@ def git(repo, *args, check=True):
 def record(workdir, out, pytest_args, python, root=None, values=True, env_extra=None, timeout=None,
            backend="auto"):
     """Run pytest under the recorder in ``workdir`` and return the wall time."""
+    # pytest derives its rootdir from all path arguments, including the value of
+    # --betell-root. A symlinked path such as macOS's /var -> /private/var would
+    # move the rootdir to / and make test ids differ between revisions.
+    workdir = Path(workdir).resolve()
+    root = Path(root).resolve() if root else None
     env = dict(os.environ)
     paths = [PACKAGE_PARENT, str(workdir)]
     if (Path(workdir) / "src").is_dir():

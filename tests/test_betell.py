@@ -1,6 +1,7 @@
 """End-to-end checks of betell on toy repositories with known ground truth."""
 import json
 import sys
+import tempfile
 
 import pytest
 
@@ -45,6 +46,17 @@ def test_helper_change_reaches_untouched_caller(run, tmp_path):
 
 
 def test_threshold_changes_untouched_return(run, tmp_path):
+    changes = run(tmp_path, "threshold", BASE, SCENARIOS["threshold"])
+    assert ("return", "shop/api.py::checkout", "values changed") in kinds(changes, outside=True)
+
+
+def test_symlinked_temporary_directory(run, tmp_path, monkeypatch):
+    # On macOS, temporary directories live under the symlink /var -> /private/var.
+    real = tmp_path / "real"
+    real.mkdir()
+    link = tmp_path / "link"
+    link.symlink_to(real)
+    monkeypatch.setattr(tempfile, "tempdir", str(link))
     changes = run(tmp_path, "threshold", BASE, SCENARIOS["threshold"])
     assert ("return", "shop/api.py::checkout", "values changed") in kinds(changes, outside=True)
 
