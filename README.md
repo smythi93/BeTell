@@ -1,6 +1,6 @@
 # BeTell
 
-**The behavioral tells of a pull request.**
+**Behavioral evidence for human and AI code review.**
 
 [![Tests](https://github.com/smythi93/BeTell/actions/workflows/tests.yml/badge.svg)](https://github.com/smythi93/BeTell/actions/workflows/tests.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
