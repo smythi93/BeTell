@@ -1,0 +1,25 @@
+{
+  "instance_id": "sphinx-doc__sphinx-8721",
+  "test_files": [
+    "tests/test_ext_viewcode.py"
+  ],
+  "plain_base-0_seconds": 2.124157190322876,
+  "plain_base-0_pytest": 1.42,
+  "plain_base-1_seconds": 1.8447823524475098,
+  "plain_base-1_pytest": 1.23,
+  "plain_base_tail": "-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_ext_viewcode.py::test_viewcode - assert '<div class=\"viewco...\nFAILED tests/test_ext_viewcode.py::test_viewcode_epub_default - AssertionErro...\n2 failed, 3 passed, 999 warnings in 1.23s\n",
+  "recorded_novalues_seconds": 6.114652395248413,
+  "recorded_novalues_pytest": 4.89,
+  "recorded_base-0_seconds": 7.245099306106567,
+  "recorded_base-0_pytest": 5.87,
+  "recorded_base-1_seconds": 7.283350944519043,
+  "recorded_base-1_pytest": 5.99,
+  "recorded_head-0_seconds": 7.000434875488281,
+  "recorded_head-0_pytest": 5.64,
+  "recorded_head-1_seconds": 7.290933132171631,
+  "recorded_head-1_pytest": 5.95,
+  "changed_files": [
+    "sphinx/ext/viewcode.py"
+  ],
+  "ok": true
+}

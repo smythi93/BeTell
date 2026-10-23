@@ -1,0 +1,3401 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 9,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 0,
+  "saturated_skipped": 4,
+  "touched_functions": [
+    "astropy/io/ascii/qdp.py::_get_tables_from_qdp_file",
+    "astropy/io/ascii/qdp.py::_line_type"
+  ],
+  "seconds": {
+    "base": [
+      0.9949538707733154,
+      1.0322215557098389
+    ],
+    "head": [
+      1.0617382526397705,
+      1.0532629489898682
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/io/ascii/qdp.py::_get_type_from_list_of_lines",
+      "detail": "no longer raised: ValueError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/io/ascii/qdp.py::_read_table_qdp",
+      "detail": "no longer raised: ValueError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/io/ascii/qdp.py::_write_table_qdp",
+      "detail": "now handled: StopIteration",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "now handled: AttributeError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/table/row.py::Row.__init__",
+      "detail": "now raised: IndexError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/table/table.py::Table.__getitem__",
+      "detail": "now raised: IndexError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/table/table.py::Table._init_from_cols",
+      "detail": "now raised: StopIteration",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/io/ascii/qdp.py::_get_tables_from_qdp_file",
+      "detail": "no longer raised: ValueError",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/io/ascii/qdp.py::_get_tables_from_qdp_file",
+      "detail": "now handled: ValueError",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/io/ascii/qdp.py::_line_type",
+      "detail": "no longer raised: ValueError",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "astropy/io/ascii/qdp.py::_get_lines_from_file",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "list:['!swift/xrt hardness ratio of trigger: xxxx, name: bubu x-2', '!columns are as labelled', 'READ ..."
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "astropy/io/ascii/qdp.py::_get_lines_from_file",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "(qdp_file=str:'/tmp/<pytest-tmp>/test_roundtrip_True_0/test2.qdp')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "astropy/io/ascii/qdp.py::_get_type_from_list_of_lines",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "(lines=list:['!swift/xrt hardness ratio of trigger: xxxx, name: bubu x-2', '!columns are as labelled', 'READ ..., delimiter=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "astropy/io/ascii/qdp.py::_read_table_qdp",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "(qdp_file=str:'/tmp/<pytest-tmp>/test_roundtrip_True_0/test2.qdp', names=list:['MJD', 'Rate'], table_id=int:0, delimiter=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "astropy/io/ascii/qdp.py::_get_tables_from_qdp_file",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "(qdp_file=str:'/tmp/<pytest-tmp>/test_roundtrip_True_0/test2.qdp', input_colnames=list:['MJD', 'Rate'], delimiter=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "call",
+      "location": "astropy/config/configuration.py::ConfigItem.__call__",
+      "detail": "newly called from ConfigItem.__get__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/config/configuration.py::ConfigItem.__get__",
+      "detail": "newly called from _auto_names",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/config/configuration.py::ConfigItem._validate_val",
+      "detail": "newly called from ConfigItem.__call__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/config/configuration.py::get_config",
+      "detail": "newly called from ConfigItem.__call__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/extern/configobj/configobj.py::Section.__getitem__",
+      "detail": "newly called from ConfigItem.__call__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/extern/configobj/configobj.py::Section.__getitem__",
+      "detail": "newly called from get_config",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/extern/configobj/validate.py::Validator._check_value",
+      "detail": "newly called from Validator.check",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/extern/configobj/validate.py::Validator._parse_with_caching",
+      "detail": "newly called from Validator.check",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/extern/configobj/validate.py::Validator.check",
+      "detail": "newly called from ConfigItem._validate_val",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/extern/configobj/validate.py::_is_num_param",
+      "detail": "newly called from is_string",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/extern/configobj/validate.py::is_string",
+      "detail": "newly called from Validator._check_value",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/io/ascii/qdp.py::_interpret_err_lines",
+      "detail": "newly called from _get_tables_from_qdp_file",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/io/ascii/qdp.py::_interpret_err_lines",
+      "detail": "newly called from _interpret_err_lines",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/io/ascii/qdp.py::_understand_err_col",
+      "detail": "newly called from _write_table_qdp",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/io/ascii/qdp.py::_write_table_qdp",
+      "detail": "newly called from _write_table_qdp",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/io/ascii/qdp.py::_write_table_qdp",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.__array_finalize__",
+      "detail": "newly called from BaseColumn.__array_wrap__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.__array_finalize__",
+      "detail": "newly called from BaseColumn.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.__array_finalize__",
+      "detail": "newly called from MaskedColumn.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.__array_finalize__",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.__array_wrap__",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.__new__",
+      "detail": "newly called from Column.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.__new__",
+      "detail": "newly called from MaskedColumn.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn._copy_attrs",
+      "detail": "newly called from BaseColumn.__array_finalize__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn._copy_attrs",
+      "detail": "newly called from MaskedColumn._copy_attrs_slice",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.data",
+      "detail": "newly called from BaseColumn.__array_wrap__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.name",
+      "detail": "newly called from BaseColumn._copy_attrs",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.name",
+      "detail": "newly called from Column.__setattr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.name",
+      "detail": "newly called from ParentAttribute.__get__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.parent_table",
+      "detail": "newly called from BaseColumn.__array_finalize__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.parent_table",
+      "detail": "newly called from BaseColumn.name",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.parent_table",
+      "detail": "newly called from Column.__setattr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.unit",
+      "detail": "newly called from BaseColumn.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.unit",
+      "detail": "newly called from BaseColumn._copy_attrs",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::BaseColumn.unit",
+      "detail": "newly called from Column.__setattr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__new__",
+      "detail": "newly called from Table._convert_data_to_col",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from BaseColumn.__array_finalize__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from BaseColumn.__array_wrap__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from BaseColumn.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from BaseColumn._copy_attrs",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from BaseColumn.name",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from BaseColumn.parent_table",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from BaseColumn.unit",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from MaskedColumn.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from MaskedColumn._copy_attrs_slice",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from MaskedColumn.fill_value",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from MetaData.__get__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from MetaData.__set__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from Table._set_col_parent_table_and_mask",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumn.__new__",
+      "detail": "newly called from Table._convert_data_to_col",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumn._copy_attrs_slice",
+      "detail": "newly called from Row.__iter__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumn._copy_attrs_slice",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumn.data",
+      "detail": "newly called from BaseColumn.__array_wrap__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumn.data",
+      "detail": "newly called from Row.__iter__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumn.data",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumn.fill_value",
+      "detail": "newly called from Column.__setattr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::MaskedColumnInfo.__init__",
+      "detail": "newly called from DataInfo.__set__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::_auto_names",
+      "detail": "newly called from Table._init_from_list",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::_auto_names",
+      "detail": "newly called from _auto_names",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::_convert_sequence_data_to_array",
+      "detail": "newly called from Table._convert_data_to_col",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/column.py::_convert_sequence_data_to_array",
+      "detail": "newly called from _convert_sequence_data_to_array",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/mixins/registry.py::get_mixin_handler",
+      "detail": "newly called from Table._convert_data_to_col",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/row.py::Row.__init__",
+      "detail": "newly called from Table.__getitem__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/row.py::Row.__iter__",
+      "detail": "newly called from _write_table_qdp",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.ColumnClass",
+      "detail": "newly called from Table._convert_col_for_table",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.ColumnClass",
+      "detail": "newly called from Table._convert_data_to_col",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.__getitem__",
+      "detail": "newly called from Table.itercols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.__getitem__",
+      "detail": "newly called from _write_table_qdp",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.__getitem__",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.__init__",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.__init__",
+      "detail": "newly called from _get_tables_from_qdp_file",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.__len__",
+      "detail": "newly called from Row.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._check_names_dtype",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._convert_col_for_table",
+      "detail": "newly called from Table._convert_data_to_col",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._convert_col_for_table",
+      "detail": "newly called from Table._init_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._convert_data_to_col",
+      "detail": "newly called from Table._init_from_list",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._init_from_cols",
+      "detail": "newly called from Table._init_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._init_from_cols",
+      "detail": "newly called from Table._init_from_list",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._init_from_list",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._is_mixin_for_table",
+      "detail": "newly called from Table._convert_data_to_col",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._make_table_from_cols",
+      "detail": "newly called from Table._init_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._make_table_from_cols",
+      "detail": "newly called from Table._make_table_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._make_table_from_cols",
+      "detail": "newly called from TableColumns.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._set_col_parent_table_and_mask",
+      "detail": "newly called from Table._make_table_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._set_column_attribute",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table._set_masked",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.colnames",
+      "detail": "newly called from _write_table_qdp",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.colnames",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.itercols",
+      "detail": "newly called from Table._init_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.masked",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::Table.masked",
+      "detail": "newly called from Table._set_col_parent_table_and_mask",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::TableColumns.__getitem__",
+      "detail": "newly called from Table.__getitem__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::TableColumns.__init__",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::TableColumns.__init__",
+      "detail": "newly called from Table._make_table_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::TableColumns.__setitem__",
+      "detail": "newly called from TableColumns.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::_get_names_from_list_of_dict",
+      "detail": "newly called from Table.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/table/table.py::has_info_class",
+      "detail": "newly called from Table._is_mixin_for_table",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::BaseColumnInfo.__init__",
+      "detail": "newly called from DataInfo.__set__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::BaseColumnInfo.__init__",
+      "detail": "newly called from MaskedColumnInfo.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::BaseColumnInfo.__set__",
+      "detail": "newly called from BaseColumn.__array_finalize__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::BaseColumnInfo.__set__",
+      "detail": "newly called from Column.__setattr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::DataInfo.__get__",
+      "detail": "newly called from BaseColumn.__array_finalize__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::DataInfo.__get__",
+      "detail": "newly called from MaskedColumn._copy_attrs_slice",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::DataInfo.__get__",
+      "detail": "newly called from Table._init_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::DataInfo.__get__",
+      "detail": "newly called from Table._make_table_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::DataInfo.__init__",
+      "detail": "newly called from BaseColumnInfo.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::DataInfo.__set__",
+      "detail": "newly called from BaseColumnInfo.__set__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::DataInfo._parent",
+      "detail": "newly called from ParentAttribute.__get__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::InfoAttribute.__get__",
+      "detail": "newly called from DataInfo.__set__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::InfoAttribute.__set__",
+      "detail": "newly called from MaskedColumnInfo.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::ParentAttribute.__get__",
+      "detail": "newly called from Table._init_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/data_info.py::ParentAttribute.__get__",
+      "detail": "newly called from Table._make_table_from_cols",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/metadata.py::MetaData.__get__",
+      "detail": "newly called from BaseColumn._copy_attrs",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/metadata.py::MetaData.__get__",
+      "detail": "newly called from _get_tables_from_qdp_file",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/metadata.py::MetaData.__get__",
+      "detail": "newly called from _write_table_qdp",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/metadata.py::MetaData.__get__",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/metadata.py::MetaData.__set__",
+      "detail": "newly called from BaseColumn.__new__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/metadata.py::MetaData.__set__",
+      "detail": "newly called from Column.__setattr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/utils/misc.py::isiterable",
+      "detail": "newly called from Table._check_names_dtype",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/io/ascii/qdp.py::_get_tables_from_qdp_file",
+      "detail": "newly called from _get_tables_from_qdp_file",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/config/configuration.py::ConfigItem.__call__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L439->L440",
+        "L440->L441",
+        "L441->L442",
+        "L442->L444",
+        "L444->L445",
+        "L444->L466",
+        "L445->L446",
+        "L446->L447",
+        "L447->L448",
+        "L448->L452",
+        "L452->L444",
+        "L466->L470",
+        "L470->L481",
+        "L481->L483",
+        "L483->L484",
+        "L484->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/config/configuration.py::ConfigItem.__call__.section_name",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L433->L439",
+        "entry->L433"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/config/configuration.py::ConfigItem.__get__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L309->L311",
+        "L311->exit",
+        "entry->L309"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/config/configuration.py::ConfigItem._validate_val",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L497->exit",
+        "entry->L497"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/config/configuration.py::get_config",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L555->L567",
+        "L567->L569",
+        "L569->L570",
+        "L570->L571",
+        "L571->L573",
+        "L573->L579",
+        "L579->L581",
+        "L581->L598",
+        "L598->L599",
+        "L599->L601",
+        "L601->exit",
+        "entry->L555"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/extern/configobj/configobj.py::Section.__getitem__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L552->L553",
+        "L553->L564",
+        "L564->exit",
+        "entry->L552"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/extern/configobj/validate.py::Validator._check_value",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L652->L653",
+        "L653->L657",
+        "L657->exit",
+        "entry->L652"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/extern/configobj/validate.py::Validator._parse_with_caching",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L638->L639",
+        "L639->L642",
+        "L642->L643",
+        "L643->L648",
+        "L648->exit",
+        "entry->L638"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/extern/configobj/validate.py::Validator.check",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L614->L616",
+        "L616->L622",
+        "L622->L625",
+        "L625->exit",
+        "entry->L614"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/extern/configobj/validate.py::_is_num_param",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L762->L763",
+        "L763->L764",
+        "L764->L765",
+        "L764->L774",
+        "L765->L766",
+        "L766->L764",
+        "L774->exit",
+        "entry->L762"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/extern/configobj/validate.py::is_string",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1095->L1097",
+        "L1097->L1098",
+        "L1098->L1099",
+        "L1099->L1102",
+        "L1102->L1104",
+        "L1104->L1106",
+        "L1106->exit",
+        "entry->L1095"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_get_type_from_list_of_lines",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L122->L123",
+        "L123->L124",
+        "L124->L125",
+        "L124->L132",
+        "L125->L124",
+        "L125->L126",
+        "L126->L127",
+        "L127->L128",
+        "L127->L129",
+        "L128->L124",
+        "L129->L124",
+        "L132->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_get_type_from_list_of_lines",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [
+        "L122->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_interpret_err_lines",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L193",
+        "L193->L194",
+        "L193->exit",
+        "L194->L199",
+        "L199->L201",
+        "L201->L202",
+        "L202->L204",
+        "L204->L205",
+        "L205->L206",
+        "L206->L209",
+        "L209->L210",
+        "L210->L211",
+        "L210->L232",
+        "L211->L212",
+        "L212->L213",
+        "L212->L215",
+        "L213->L210",
+        "L215->L217",
+        "L217->L218",
+        "L218->L220",
+        "L220->L221",
+        "L221->L222",
+        "L221->L226",
+        "L222->L223",
+        "L223->L224",
+        "L224->L210",
+        "L226->L227",
+        "L227->L228",
+        "L228->L229",
+        "L229->L230",
+        "L230->L210",
+        "L232",
+        "L232->L234",
+        "L232->exit",
+        "L234->exit",
+        "entry->L193",
+        "entry->L232"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_read_table_qdp",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L418->L422",
+        "L422->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_read_table_qdp",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [
+        "L418->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_understand_err_col",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L365->L366",
+        "L366->L367",
+        "L367->L369",
+        "L369->L370",
+        "L369->L382",
+        "L370->L373",
+        "L370->L375",
+        "L373->L374",
+        "L374->L369",
+        "L375->L376",
+        "L375->L380",
+        "L376->L377",
+        "L377->L379",
+        "L379->L369",
+        "L380->L369",
+        "L382->exit",
+        "entry->L365"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_write_table_qdp",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L442->L444",
+        "L444->L446",
+        "L446->L447",
+        "L447->L448",
+        "L447->L453",
+        "L448->L449",
+        "L449->L450",
+        "L450->L451",
+        "L451->L447",
+        "L453->L454",
+        "L454->L458",
+        "L458->L459",
+        "L459",
+        "L459->L460",
+        "L459->exit",
+        "L460->L461",
+        "L461->L462",
+        "L462",
+        "L462->L463",
+        "L462->exit",
+        "L463->L465",
+        "L465->L466",
+        "L466->L467",
+        "L466->L472",
+        "L467->L468",
+        "L468->L469",
+        "L469->L470",
+        "L470->L466",
+        "L472->L473",
+        "L473->L474",
+        "L474->L475",
+        "L474->L484",
+        "L475->L476",
+        "L476->L477",
+        "L476->L482",
+        "L477->L478",
+        "L477->L480",
+        "L478->L481",
+        "L480->L481",
+        "L481->L476",
+        "L482->L474",
+        "L484->L485",
+        "L485->L487",
+        "L487->L488",
+        "L488->L489",
+        "L489->L491",
+        "L491->exit",
+        "entry->L442",
+        "entry->L459",
+        "entry->L462"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn.__array_finalize__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L701->L704",
+        "L704->L705",
+        "L705->L710",
+        "L710->L711",
+        "L711->L712",
+        "L711->L713",
+        "L712->L713",
+        "L713->L714",
+        "L714->L715",
+        "L714->exit",
+        "L715->exit",
+        "entry->L701"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn.__array_wrap__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L737->L738",
+        "L738->L739",
+        "L738->L740",
+        "L738->L742",
+        "L738->L744",
+        "L739->L738",
+        "L740->L738",
+        "L742->exit",
+        "L744->exit",
+        "entry->L737"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn.__new__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L519->L521",
+        "L521->L537",
+        "L537->L553",
+        "L553->L555",
+        "L555->L557",
+        "L557->L558",
+        "L558->L559",
+        "L559->L560",
+        "L560->L561",
+        "L561->L562",
+        "L562->L563",
+        "L563->L564",
+        "L564->L565",
+        "L565->L568",
+        "L568->exit",
+        "entry->L519"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn._copy_attrs",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1115->L1116",
+        "L1115->L1120",
+        "L1116->L1117",
+        "L1117->L1115",
+        "L1120->L1121",
+        "L1121->exit",
+        "entry->L1115"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn.data",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L572->exit",
+        "entry->L572"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn.name",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L751->exit",
+        "L755->L756",
+        "L755->L758",
+        "L756->L758",
+        "L758->L762",
+        "L762->exit",
+        "entry->L751",
+        "entry->L755"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn.parent_table",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L586->L587",
+        "L587->exit",
+        "L593->L594",
+        "L593->L596",
+        "L594->exit",
+        "L596->exit",
+        "entry->L586",
+        "entry->L593"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::BaseColumn.unit",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L974->exit",
+        "L978->L979",
+        "L979->exit",
+        "entry->L974",
+        "entry->L978"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::Column.__new__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1236->L1241",
+        "L1241->L1242",
+        "L1241->L1255",
+        "L1242->L1243",
+        "L1243->L1244",
+        "L1244->L1245",
+        "L1245->L1246",
+        "L1246->L1247",
+        "L1247->L1248",
+        "L1248->L1249",
+        "L1249->L1250",
+        "L1250->L1251",
+        "L1251->L1252",
+        "L1252->L1253",
+        "L1253->L1241",
+        "L1255->exit",
+        "entry->L1236"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::Column.__setattr__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1258->L1262",
+        "L1262->L1264",
+        "L1264->L1265",
+        "L1264->exit",
+        "L1265->L1266",
+        "L1266->L1267",
+        "L1267->L1268",
+        "L1268->exit",
+        "entry->L1258"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::MaskedColumn.__new__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1595->L1599",
+        "L1599->L1600",
+        "L1600->L1603",
+        "L1603->L1622",
+        "L1622->L1623",
+        "L1622->L1635",
+        "L1623->L1624",
+        "L1624->L1625",
+        "L1625->L1626",
+        "L1626->L1627",
+        "L1627->L1628",
+        "L1628->L1629",
+        "L1629->L1630",
+        "L1630->L1631",
+        "L1631->L1632",
+        "L1632->L1633",
+        "L1633->L1622",
+        "L1635->L1639",
+        "L1639->L1644",
+        "L1644->L1645",
+        "L1645->L1647",
+        "L1646->L1648",
+        "L1646->L1651",
+        "L1647->L1646",
+        "L1648->L1646",
+        "L1651->L1653",
+        "L1653->L1656",
+        "L1656->L1659",
+        "L1659->exit",
+        "entry->L1595"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::MaskedColumn._copy_attrs_slice",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1795->L1799",
+        "L1795->L1806",
+        "L1799->L1800",
+        "L1800->L1801",
+        "L1801->L1803",
+        "L1803->L1804",
+        "L1804->L1805",
+        "L1805->L1806",
+        "L1806->exit",
+        "entry->L1795"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::MaskedColumn.data",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1691->L1695",
+        "L1695->L1696",
+        "L1696->exit",
+        "entry->L1691"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::MaskedColumn.fill_value",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1684->L1686",
+        "L1686->exit",
+        "entry->L1684"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::MaskedColumnInfo.__init__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1448->L1452",
+        "L1452->L1455",
+        "L1454->exit",
+        "L1455->L1456",
+        "L1456->L1457",
+        "L1457->L1458",
+        "L1458->L1459",
+        "L1459->L1454",
+        "entry->L1448"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::_auto_names",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L45->L47",
+        "L47",
+        "L47->exit",
+        "entry->L45",
+        "entry->L47"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/column.py::_convert_sequence_data_to_array",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L192->L197",
+        "L196->L198",
+        "L196->L199",
+        "L196->L209",
+        "L197->L196",
+        "L198->L196",
+        "L199->L196",
+        "L199->L201",
+        "L200->exit",
+        "L201->L199",
+        "L201->L200",
+        "L209->L212",
+        "L212->L213",
+        "L212->L217",
+        "L213->L212",
+        "L217->L218",
+        "L217->L222",
+        "L218->L219",
+        "L219->L220",
+        "L220->L217",
+        "L222->L223",
+        "L223->L238",
+        "L238->L248",
+        "L248->L249",
+        "L248->L259",
+        "L249->exit",
+        "L259->L260",
+        "L260->L261",
+        "L260->L267",
+        "L261->L262",
+        "L262->L260",
+        "L267->L268",
+        "L268->L272",
+        "L272->L273",
+        "L273->L274",
+        "L274->L277",
+        "L277->L279",
+        "L279->L283",
+        "L283->L285",
+        "L285",
+        "L285->L286",
+        "L285->exit",
+        "L286->L287",
+        "L286->L300",
+        "L287->L288",
+        "L288->L289",
+        "L288->L291",
+        "L289->L290",
+        "L290->L286",
+        "L291->L286",
+        "L300->L301",
+        "L301->L305",
+        "L305->L307",
+        "L307->exit",
+        "entry->L192",
+        "entry->L199",
+        "entry->L285"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/mixins/registry.py::get_mixin_handler",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L63->L66",
+        "L66->L67",
+        "L66->exit",
+        "L67->L66",
+        "entry->L63"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/row.py::Row.__init__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L34->L36",
+        "L36->L38",
+        "L38->L39",
+        "L38->L44",
+        "L39->L40",
+        "L39->exit",
+        "L40->L39",
+        "L44->L45",
+        "L45->exit",
+        "entry->L34"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/row.py::Row.__iter__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L105->L106",
+        "L106->L107",
+        "L106->exit",
+        "L107->L106",
+        "L107->exit",
+        "entry->L105"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table.ColumnClass",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L2198->L2201",
+        "L2201->exit",
+        "entry->L2198"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table.__getitem__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L2054->L2055",
+        "L2054->L2056",
+        "L2055->exit",
+        "L2056->L2057",
+        "L2057->exit",
+        "entry->L2054"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table.__init__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L698->L699",
+        "L699->L700",
+        "L700->L701",
+        "L701->L702",
+        "L702->L703",
+        "L703->L706",
+        "L706->L711",
+        "L711->L716",
+        "L716->L717",
+        "L717->L719",
+        "L719->L724",
+        "L724->L725",
+        "L725->L727",
+        "L727->L730",
+        "L730->L735",
+        "L735->L743",
+        "L743->L744",
+        "L744->L750",
+        "L750->L757",
+        "L757->L762",
+        "L762->L765",
+        "L765->L768",
+        "L768->L772",
+        "L771->L774",
+        "L772->L771",
+        "L774->L778",
+        "L778->L779",
+        "L779->L854",
+        "L854->L855",
+        "L855->L862",
+        "L862->L865",
+        "L865",
+        "L865->L867",
+        "L865->exit",
+        "L867->L870",
+        "L870->L874",
+        "L874->L879",
+        "L879->L884",
+        "L884->L887",
+        "L887->L888",
+        "L888->exit",
+        "entry->L698",
+        "entry->L865"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table.__len__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L2234->L2235",
+        "L2235->exit",
+        "entry->L2234"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._check_names_dtype",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1152->L1153",
+        "L1152->L1156",
+        "L1153->L1152",
+        "L1156->exit",
+        "entry->L1152"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._convert_col_for_table",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1450->L1455",
+        "L1455->exit",
+        "entry->L1450"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._convert_data_to_col",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1281->L1284",
+        "L1282->L1288",
+        "L1283->L1285",
+        "L1284->L1283",
+        "L1285->L1282",
+        "L1288->L1289",
+        "L1289->L1297",
+        "L1297->L1314",
+        "L1314->L1322",
+        "L1322->L1331",
+        "L1331->L1340",
+        "L1340->L1351",
+        "L1351->L1357",
+        "L1357->L1365",
+        "L1365->L1373",
+        "L1373->L1374",
+        "L1374->L1377",
+        "L1375->L1384",
+        "L1376->L1375",
+        "L1376->L1378",
+        "L1377->L1376",
+        "L1378->L1375",
+        "L1384->L1385",
+        "L1385->L1386",
+        "L1385->L1396",
+        "L1386->L1387",
+        "L1387->L1388",
+        "L1388->L1389",
+        "L1389->L1390",
+        "L1390->L1385",
+        "L1396->L1398",
+        "L1398->exit",
+        "entry->L1281"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._init_from_cols",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1459",
+        "L1459->L1460",
+        "L1459->exit",
+        "L1460->L1466",
+        "L1466",
+        "L1466->L1467",
+        "L1466->exit",
+        "L1467->L1473",
+        "L1473->L1474",
+        "L1474->L1475",
+        "L1474->exit",
+        "L1475->L1474",
+        "entry->L1459",
+        "entry->L1466"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._init_from_list",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1228->L1231",
+        "L1231->L1232",
+        "L1232->L1234",
+        "L1234->L1235",
+        "L1234->L1239",
+        "L1235->L1237",
+        "L1237->L1234",
+        "L1239->exit",
+        "entry->L1228"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._is_mixin_for_table",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1672->L1677",
+        "L1677->exit",
+        "entry->L1672"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._make_table_from_cols",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1521->L1522",
+        "L1522",
+        "L1522->L1528",
+        "L1522->exit",
+        "L1528->L1529",
+        "L1529->L1531",
+        "L1531->L1534",
+        "L1534->L1535",
+        "L1534->L1538",
+        "L1534->exit",
+        "L1535->L1534",
+        "L1535->exit",
+        "L1538->L1539",
+        "L1538->exit",
+        "L1539->L1538",
+        "entry->L1521",
+        "entry->L1522",
+        "entry->L1534"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._set_col_parent_table_and_mask",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1548->L1549",
+        "L1549->L1552",
+        "L1552->exit",
+        "entry->L1548"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._set_column_attribute",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L895->L896",
+        "L896->exit",
+        "entry->L895"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table._set_masked",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L2189->L2190",
+        "L2190->L2194",
+        "L2194->exit",
+        "entry->L2189"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table.colnames",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L2209->exit",
+        "entry->L2209"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table.itercols",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L1576->L1577",
+        "L1576->exit",
+        "L1577->L1576",
+        "L1577->exit",
+        "entry->L1576"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::Table.masked",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L2171->exit",
+        "entry->L2171"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::TableColumns.__getitem__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L263->L264",
+        "L264->exit",
+        "entry->L263"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::TableColumns.__init__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L240->L250",
+        "L250->exit",
+        "entry->L240"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::TableColumns.__setitem__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L291->L295",
+        "L295->exit",
+        "entry->L291"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::_get_names_from_list_of_dict",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L207->L210",
+        "L210->L211",
+        "L211->L212",
+        "L212->L213",
+        "L213->exit",
+        "entry->L207"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/table/table.py::has_info_class",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L198->exit",
+        "entry->L198"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::BaseColumnInfo.__init__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L576->L580",
+        "L580->L581",
+        "L581->exit",
+        "entry->L576"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::BaseColumnInfo.__set__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L585->L586",
+        "L586->L591",
+        "L591->exit",
+        "entry->L585"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::DataInfo.__get__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L358->L363",
+        "L363->L364",
+        "L364->L369",
+        "L369->L370",
+        "L370->exit",
+        "entry->L358"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::DataInfo.__init__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L333->L334",
+        "L334->exit",
+        "entry->L333"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::DataInfo.__set__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L373->L377",
+        "L377->L378",
+        "L378->L379",
+        "L379->L380",
+        "L380->L384",
+        "L380->L387",
+        "L384->L389",
+        "L387->L389",
+        "L389->L390",
+        "L389->exit",
+        "L390->L389",
+        "entry->L373"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::DataInfo._parent",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L338->L339",
+        "L339->L343",
+        "L343->L355",
+        "L355->exit",
+        "entry->L338"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::InfoAttribute.__get__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L216->L219",
+        "L219->exit",
+        "entry->L216"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::InfoAttribute.__set__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L222->L226",
+        "L226->exit",
+        "entry->L222"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/data_info.py::ParentAttribute.__get__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L234->L237",
+        "L237->exit",
+        "entry->L234"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/metadata.py::MetaData.__get__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L432->L434",
+        "L434->L435",
+        "L434->L436",
+        "L435->L436",
+        "L436->exit",
+        "entry->L432"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/metadata.py::MetaData.__set__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L439->L440",
+        "L440->exit",
+        "entry->L439"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/utils/misc.py::isiterable",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L59->L60",
+        "L60->L61",
+        "L61->exit",
+        "entry->L59"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_get_tables_from_qdp_file",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L259->L261",
+        "L261->L262",
+        "L262->L263",
+        "L263->L265",
+        "L265->L266",
+        "L266->L267",
+        "L267->L268",
+        "L268->L270",
+        "L270->L271",
+        "L270->L336",
+        "L271->L273",
+        "L273->L274",
+        "L273->L277",
+        "L274->L275",
+        "L275->L270",
+        "L277->L280",
+        "L277->L292",
+        "L280->L281",
+        "L280->L284",
+        "L281->L282",
+        "L282->L284",
+        "L284->L285",
+        "L284->L289",
+        "L285->L286",
+        "L285->L289",
+        "L286->L287",
+        "L287->L285",
+        "L289->L290",
+        "L290->L270",
+        "L292->L294",
+        "L292->L320",
+        "L294->L295",
+        "L294->L301",
+        "L295->L296",
+        "L295->L301",
+        "L296->L298",
+        "L298->L300",
+        "L300",
+        "L300->L295",
+        "L300->exit",
+        "L301->L302",
+        "L301->L304",
+        "L302->L304",
+        "L304->L305",
+        "L304->L307",
+        "L305->L307",
+        "L307->L308",
+        "L308->L317",
+        "L310->L308",
+        "L313->L314",
+        "L314->L315",
+        "L315->L316",
+        "L316->L308",
+        "L317->L318",
+        "L318->L270",
+        "L320->L322",
+        "L322->L323",
+        "L323->L324",
+        "L324->L325",
+        "L324->L327",
+        "L325->L324",
+        "L327->L329",
+        "L329->L330",
+        "L330->L331",
+        "L331->L332",
+        "L332->L270",
+        "L336->L337",
+        "L337->L338",
+        "L338->L339",
+        "L339->L340",
+        "L340->L342",
+        "L342->exit",
+        "entry->L300"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_get_tables_from_qdp_file",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [
+        "L259->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_line_type",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [],
+      "after": [
+        "L82->L83",
+        "L83->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/io/ascii/qdp.py::_line_type",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/io/ascii/tests/test_qdp.py::test_roundtrip[True]"
+      ],
+      "before": [
+        "L77->L78",
+        "L78->exit"
+      ],
+      "after": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "instance_id": "astropy__astropy-14995",
+  "test_files": [
+    "astropy/nddata/mixins/tests/test_ndarithmetic.py"
+  ],
+  "plain_base-0_seconds": 2.434279680252075,
+  "plain_base-0_pytest": 0.72,
+  "plain_base-1_seconds": 1.4835960865020752,
+  "plain_base-1_pytest": 0.53,
+  "plain_base_tail": "hort test summary info ============================\u001b[0m\n\u001b[31mFAILED\u001b[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::\u001b[1mtest_nddata_bitmask_arithmetic\u001b[0m - TypeError: unsupported operand type(s) for |: 'int' and 'NoneType'\n\u001b[31m\u001b[31m\u001b[1m1 failed\u001b[0m, \u001b[32m179 passed\u001b[0m\u001b[31m in 0.53s\u001b[0m\u001b[0m\n",
+  "recorded_novalues_seconds": 4.818051815032959,
+  "recorded_novalues_pytest": 3.47,
+  "recorded_base-0_seconds": 13.964048147201538,
+  "recorded_base-0_pytest": 12.31,
+  "recorded_base-1_seconds": 13.984105825424194,
+  "recorded_base-1_pytest": 12.33,
+  "recorded_head-0_seconds": 13.770742893218994,
+  "recorded_head-0_pytest": 12.21,
+  "recorded_head-1_seconds": 14.127991199493408,
+  "recorded_head-1_pytest": 12.48,
+  "changed_files": [
+    "astropy/nddata/mixins/ndarithmetic.py"
+  ],
+  "ok": true
+}

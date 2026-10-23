@@ -1,0 +1,150 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 112,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 940,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "lib/matplotlib/figure.py::Figure.__getstate__"
+  ],
+  "seconds": {
+    "base": [
+      91.19052505493164,
+      90.67512822151184
+    ],
+    "head": [
+      89.8602774143219,
+      90.69057893753052
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/figure.py::Figure.__repr__",
+      "detail": "no longer called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/figure.py::Figure.axes",
+      "detail": "no longer called from Figure.__repr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/transforms.py::BboxBase.size",
+      "detail": "no longer called from Figure.__repr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/transforms.py::TransformedBbox.get_points",
+      "detail": "no longer called from BboxBase.size",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/figure.py::Figure.__getstate__",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_deepcopy",
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [
+        "L3024->L3030"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/figure.py::Figure.__repr__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [
+        "L2238->L2239",
+        "L2238->exit",
+        "L2239->L2240",
+        "L2240->L2241",
+        "L2241->L2238",
+        "entry->L2238"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/transforms.py::BboxBase.size",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [
+        "L376->L377",
+        "L377->exit",
+        "entry->L376"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/transforms.py::TransformedBbox.get_points",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio"
+      ],
+      "before": [
+        "L1111->L1137",
+        "L1137->exit",
+        "entry->L1111"
+      ],
+      "after": []
+    }
+  ]
+}

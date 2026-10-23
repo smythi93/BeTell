@@ -1,0 +1,25 @@
+{
+  "instance_id": "scikit-learn__scikit-learn-13439",
+  "test_files": [
+    "sklearn/tests/test_pipeline.py"
+  ],
+  "plain_base-0_seconds": 1.8535559177398682,
+  "plain_base-0_pytest": 1.34,
+  "plain_base-1_seconds": 1.5825681686401367,
+  "plain_base-1_pytest": 1.08,
+  "plain_base_tail": "ipeline.memory is memory\n        pipeline = make_pipeline(DummyTransf(), SVC())\n        assert pipeline.memory is None\n>       assert len(pipeline) == 2\nE       TypeError: object of type 'Pipeline' has no len()\n\nsklearn/tests/test_pipeline.py:1072: TypeError\n1 failed, 40 passed, 2 warnings in 1.08s\n",
+  "recorded_novalues_seconds": 2.6130003929138184,
+  "recorded_novalues_pytest": 1.83,
+  "recorded_base-0_seconds": 14.250172853469849,
+  "recorded_base-0_pytest": 13.44,
+  "recorded_base-1_seconds": 14.014613389968872,
+  "recorded_base-1_pytest": 13.22,
+  "recorded_head-0_seconds": 18.753301858901978,
+  "recorded_head-0_pytest": 17.83,
+  "recorded_head-1_seconds": 13.752907991409302,
+  "recorded_head-1_pytest": 12.94,
+  "changed_files": [
+    "sklearn/pipeline.py"
+  ],
+  "ok": true
+}

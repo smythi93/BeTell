@@ -1,0 +1,25 @@
+{
+  "instance_id": "matplotlib__matplotlib-24970",
+  "test_files": [
+    "lib/matplotlib/tests/test_colors.py"
+  ],
+  "plain_base-0_seconds": 6.092516899108887,
+  "plain_base-0_pytest": 5.24,
+  "plain_base-1_seconds": 3.9385433197021484,
+  "plain_base-1_pytest": 3.17,
+  "plain_base_tail": "DeprecationWarning\n=========================== short test summary info ============================\nFAILED lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8] - Depreca...\nFAILED lib/matplotlib/tests/test_colors.py::test_double_register_builtin_cmap\n2 failed, 253 passed, 1 skipped in 3.17s\n",
+  "recorded_novalues_seconds": 15.123846054077148,
+  "recorded_novalues_pytest": 12.98,
+  "recorded_base-0_seconds": 24.11683702468872,
+  "recorded_base-0_pytest": 21.35,
+  "recorded_base-1_seconds": 24.04798150062561,
+  "recorded_base-1_pytest": 21.33,
+  "recorded_head-0_seconds": 25.680598735809326,
+  "recorded_head-0_pytest": 22.94,
+  "recorded_head-1_seconds": 23.64695930480957,
+  "recorded_head-1_pytest": 20.93,
+  "changed_files": [
+    "lib/matplotlib/colors.py"
+  ],
+  "ok": true
+}

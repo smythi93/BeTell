@@ -1,0 +1,25 @@
+{
+  "instance_id": "matplotlib__matplotlib-25332",
+  "test_files": [
+    "lib/matplotlib/tests/test_pickle.py"
+  ],
+  "plain_base-0_seconds": 4.606312274932861,
+  "plain_base-0_pytest": 3.76,
+  "plain_base-1_seconds": 2.1195030212402344,
+  "plain_base-1_pytest": 1.51,
+  "plain_base_tail": "_pickle.py:134: TypeError\n=========================== short test summary info ============================\nFAILED lib/matplotlib/tests/test_pickle.py::test_complete[png] - TypeError: c...\nFAILED lib/matplotlib/tests/test_pickle.py::test_pickle_load_from_subprocess[png]\n2 failed, 181 passed in 1.51s\n",
+  "recorded_novalues_seconds": 11.689417839050293,
+  "recorded_novalues_pytest": 9.93,
+  "recorded_base-0_seconds": 16.035298347473145,
+  "recorded_base-0_pytest": 13.87,
+  "recorded_base-1_seconds": 16.252504587173462,
+  "recorded_base-1_pytest": 14.08,
+  "recorded_head-0_seconds": 23.517427682876587,
+  "recorded_head-0_pytest": 21.19,
+  "recorded_head-1_seconds": 23.043986082077026,
+  "recorded_head-1_pytest": 20.79,
+  "changed_files": [
+    "lib/matplotlib/cbook.py"
+  ],
+  "ok": true
+}

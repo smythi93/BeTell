@@ -1,0 +1,26 @@
+{
+  "instance_id": "scikit-learn__scikit-learn-13142",
+  "test_files": [
+    "sklearn/mixture/tests/test_bayesian_mixture.py",
+    "sklearn/mixture/tests/test_gaussian_mixture.py"
+  ],
+  "plain_base-0_seconds": 9.791489362716675,
+  "plain_base-0_pytest": 9.34,
+  "plain_base-1_seconds": 9.412546634674072,
+  "plain_base-1_pytest": 8.96,
+  "plain_base_tail": ", 0, 3, 3, 0, 4, 2, 2, 2,\nE              2, 2, 2, 2, 4, 1, 3, 0, 4, 4, 1, 2, 1, 0, 3, 3, 3, 2, 2, 4, 1, 2,\nE              1, 0, 4, 0, 3, 3, 3, 0, 1, 0, 3, 3, 4, 2, 3, 0, 3, 4, 4, 0, 1, 3,...\n\nsklearn/mixture/tests/test_gaussian_mixture.py:607: AssertionError\n2 failed, 54 passed, 9 warnings in 8.96s\n",
+  "recorded_novalues_seconds": 15.415114879608154,
+  "recorded_novalues_pytest": 14.76,
+  "recorded_base-0_seconds": 204.244220495224,
+  "recorded_base-0_pytest": 203.34,
+  "recorded_base-1_seconds": 209.3373260498047,
+  "recorded_base-1_pytest": 208.45,
+  "recorded_head-0_seconds": 207.50883388519287,
+  "recorded_head-0_pytest": 206.65,
+  "recorded_head-1_seconds": 209.3978295326233,
+  "recorded_head-1_pytest": 208.49,
+  "changed_files": [
+    "sklearn/mixture/base.py"
+  ],
+  "ok": true
+}

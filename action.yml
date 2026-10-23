@@ -1,0 +1,58 @@
+name: "BeTell: behavioral diff"
+description: "Run the tests on the pull request's base and head, and comment with the runtime behavior that changed."
+branding:
+  icon: "git-pull-request"
+  color: "blue"
+inputs:
+  pytest-args:
+    description: "Arguments passed to pytest, for example a test directory"
+    required: false
+    default: ""
+  runs-base:
+    description: "Repeated base runs used to filter nondeterministic observations"
+    required: false
+    default: "2"
+  runs-head:
+    description: "Repeated head runs used to filter nondeterministic observations"
+    required: false
+    default: "2"
+  python:
+    description: "Python interpreter that has the project and its test dependencies installed"
+    required: false
+    default: "python"
+  comment:
+    description: "Post the report as a pull request comment"
+    required: false
+    default: "true"
+outputs:
+  report:
+    description: "Path to the Markdown report"
+    value: ${{ steps.betell.outputs.report }}
+runs:
+  using: composite
+  steps:
+    - name: Install BeTell
+      shell: bash
+      run: ${{ inputs.python }} -m pip install --quiet "${{ github.action_path }}"
+    - name: Record base and head
+      id: betell
+      shell: bash
+      run: |
+        ${{ inputs.python }} -m betell.cli run \
+          --base "${{ github.event.pull_request.base.sha }}" \
+          --head "${{ github.event.pull_request.head.sha }}" \
+          --runs-base "${{ inputs.runs-base }}" \
+          --runs-head "${{ inputs.runs-head }}" \
+          --python "$(command -v ${{ inputs.python }})" \
+          --pytest-args "${{ inputs.pytest-args }}" \
+          --out betell-report.md --json betell-report.json
+        cat betell-report.md >> "$GITHUB_STEP_SUMMARY"
+        echo "report=betell-report.md" >> "$GITHUB_OUTPUT"
+    - name: Comment on the pull request
+      if: ${{ inputs.comment == 'true' && github.event_name == 'pull_request' }}
+      shell: bash
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        gh pr comment "${{ github.event.pull_request.number }}" --body-file betell-report.md --edit-last \
+          || gh pr comment "${{ github.event.pull_request.number }}" --body-file betell-report.md

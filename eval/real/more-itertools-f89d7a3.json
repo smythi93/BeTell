@@ -1,0 +1,46 @@
+{
+  "base": "f89d7a3^",
+  "head": "f89d7a3",
+  "compared_tests": 766,
+  "added_tests": [
+    "test_more.py::IchunkedTests::test_zero_nonempty"
+  ],
+  "removed_tests": [],
+  "unstable_dropped": 9,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "more_itertools/more.py::ichunked",
+    "tests/test_more.py::<module>",
+    "tests/test_more.py::IchunkedTests.test_negative",
+    "tests/test_more.py::IchunkedTests.test_zero_nonempty"
+  ],
+  "seconds": {
+    "base": [
+      18.191114902496338,
+      18.282740354537964
+    ],
+    "head": [
+      18.475425004959106,
+      18.029977083206177
+    ]
+  },
+  "changes": [
+    {
+      "kind": "branch",
+      "location": "more_itertools/more.py::ichunked",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::IchunkedTests::test_negative",
+        "test_more.py::IchunkedTests::test_zero"
+      ],
+      "before": [
+        "L3726",
+        "L3727",
+        "L3728"
+      ],
+      "after": []
+    }
+  ]
+}

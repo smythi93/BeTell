@@ -1,0 +1,41 @@
+{
+  "base": "d032cab^",
+  "head": "d032cab",
+  "compared_tests": 747,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 10,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "more_itertools/more.py::constrained_batches"
+  ],
+  "seconds": {
+    "base": [
+      18.247266054153442,
+      17.13591504096985
+    ],
+    "head": [
+      17.74901580810547,
+      16.959736108779907
+    ]
+  },
+  "changes": [
+    {
+      "kind": "branch",
+      "location": "more_itertools/more.py::constrained_batches",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::ConstrainedBatchesTests::test_basic",
+        "test_more.py::ConstrainedBatchesTests::test_get_len",
+        "test_more.py::ConstrainedBatchesTests::test_max_count",
+        "test_more.py::ConstrainedBatchesTests::test_strict"
+      ],
+      "before": [
+        "L4953->L4958"
+      ],
+      "after": []
+    }
+  ]
+}

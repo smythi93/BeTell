@@ -1,0 +1,74 @@
+{
+  "base": "def2dab^",
+  "head": "def2dab",
+  "compared_tests": 749,
+  "added_tests": [
+    "test_more.py::OneTests::test_falsy_custom_exception",
+    "test_more.py::OneTests::test_too_long_does_not_evaluate_repr",
+    "test_more.py::OnlyTests::test_falsy_custom_exception",
+    "test_more.py::OnlyTests::test_too_long_does_not_evaluate_repr"
+  ],
+  "removed_tests": [],
+  "unstable_dropped": 14,
+  "saturated_skipped": 1,
+  "touched_functions": [
+    "more_itertools/more.py::one",
+    "more_itertools/more.py::only",
+    "tests/test_more.py::<module>",
+    "tests/test_more.py::OneTests.test_falsy_custom_exception",
+    "tests/test_more.py::OneTests.test_falsy_custom_exception.FalsyError.__bool__",
+    "tests/test_more.py::OneTests.test_too_long_default_message",
+    "tests/test_more.py::OneTests.test_too_long_does_not_evaluate_repr",
+    "tests/test_more.py::OneTests.test_too_long_does_not_evaluate_repr.NoRepr.__repr__",
+    "tests/test_more.py::OnlyTests.test_falsy_custom_exception",
+    "tests/test_more.py::OnlyTests.test_falsy_custom_exception.FalsyError.__bool__",
+    "tests/test_more.py::OnlyTests.test_too_long_does_not_evaluate_repr",
+    "tests/test_more.py::OnlyTests.test_too_long_does_not_evaluate_repr.NoRepr.__repr__"
+  ],
+  "seconds": {
+    "base": [
+      18.397820949554443,
+      18.480820894241333
+    ],
+    "head": [
+      18.888492822647095,
+      18.086101055145264
+    ]
+  },
+  "changes": [
+    {
+      "kind": "branch",
+      "location": "more_itertools/more.py::only",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::OnlyTests::test_custom_exception",
+        "test_more.py::OnlyTests::test_custom_value",
+        "test_more.py::OnlyTests::test_defaults"
+      ],
+      "before": [
+        "L3686->L3693",
+        "L3690",
+        "L3691",
+        "L3693"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "more_itertools/more.py::one",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::OneTests::test_basic"
+      ],
+      "before": [
+        "L660->L667",
+        "L667"
+      ],
+      "after": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "instance_id": "matplotlib__matplotlib-24149",
+  "test_files": [
+    "lib/matplotlib/tests/test_axes.py"
+  ],
+  "plain_base-0_seconds": 62.05467867851257,
+  "plain_base-0_pytest": 61.09,
+  "plain_base-1_seconds": 55.76282453536987,
+  "plain_base-1_pytest": 54.95,
+  "plain_base_tail": "/opt/miniconda3/envs/testbed/lib/python3.11/site-packages/_pytest/capture.py:880: RuntimeError\n=========================== short test summary info ============================\nFAILED lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png] - RuntimeErro...\n1 failed, 767 passed, 64 skipped in 54.95s\n",
+  "recorded_novalues_seconds": 380.709673166275,
+  "recorded_novalues_pytest": 339.47,
+  "recorded_base-0_seconds": 578.9198758602142,
+  "recorded_base-0_pytest": 527.8,
+  "recorded_base-1_seconds": 583.7837598323822,
+  "recorded_base-1_pytest": 531.46,
+  "recorded_head-0_seconds": 584.9454946517944,
+  "recorded_head-0_pytest": 532.67,
+  "recorded_head-1_seconds": 577.36066198349,
+  "recorded_head-1_pytest": 525.19,
+  "changed_files": [
+    "lib/matplotlib/axes/_axes.py"
+  ],
+  "ok": true
+}

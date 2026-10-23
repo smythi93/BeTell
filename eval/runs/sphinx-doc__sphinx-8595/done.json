@@ -1,0 +1,25 @@
+{
+  "instance_id": "sphinx-doc__sphinx-8595",
+  "test_files": [
+    "tests/test_ext_autodoc_automodule.py"
+  ],
+  "plain_base-0_seconds": 1.245469093322754,
+  "plain_base-0_pytest": 0.53,
+  "plain_base-1_seconds": 0.8179774284362793,
+  "plain_base-1_pytest": 0.25,
+  "plain_base_tail": "ctives import html, images, tables\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_ext_autodoc_automodule.py::test_empty_all - AssertionError:...\n1 failed, 7 warnings in 0.25s\n",
+  "recorded_novalues_seconds": 1.5833919048309326,
+  "recorded_novalues_pytest": 0.73,
+  "recorded_base-0_seconds": 1.6366384029388428,
+  "recorded_base-0_pytest": 0.78,
+  "recorded_base-1_seconds": 1.6672139167785645,
+  "recorded_base-1_pytest": 0.8,
+  "recorded_head-0_seconds": 1.5033118724822998,
+  "recorded_head-0_pytest": 0.63,
+  "recorded_head-1_seconds": 1.536999225616455,
+  "recorded_head-1_pytest": 0.66,
+  "changed_files": [
+    "sphinx/ext/autodoc/__init__.py"
+  ],
+  "ok": true
+}

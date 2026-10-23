@@ -1,0 +1,532 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 15,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 0,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "astropy/modeling/separable.py::_cstack"
+  ],
+  "seconds": {
+    "base": [
+      0.4433743953704834,
+      0.44832777976989746
+    ],
+    "head": [
+      0.3884470462799072,
+      0.3939826488494873
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "outcome",
+      "location": "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "astropy/modeling/separable.py::_separable",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "ndarray:array([[1., 1., 0., 0., 0.],... 1.], [0., 0., 0., 1., 1.]])",
+        "ndarray:array([[1., 1., 0., 0.], [1.... 1., 1.], [0., 0., 1., 1.]])"
+      ],
+      "after": [
+        "ndarray:array([[1., 1., 0., 0., 0.],... 0.], [0., 0., 0., 0., 1.]])",
+        "ndarray:array([[1., 1., 0., 0.], [1.... 1., 0.], [0., 0., 0., 1.]])"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "astropy/modeling/separable.py::is_separable",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "ndarray:array([False, False, False, False])",
+        "ndarray:array([False, False, True, False, False])"
+      ],
+      "after": [
+        "ndarray:array([False, False, True, True, True])",
+        "ndarray:array([False, False, True, True])"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "astropy/modeling/separable.py::_cstack",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "ndarray:array([[1., 1., 0., 0., 0.],... 1.], [0., 0., 0., 1., 1.]])",
+        "ndarray:array([[1., 1., 0., 0.], [1.... 1., 1.], [0., 0., 1., 1.]])"
+      ],
+      "after": [
+        "ndarray:array([[1., 1., 0., 0., 0.],... 0.], [0., 0., 0., 0., 1.]])",
+        "ndarray:array([[1., 1., 0., 0.], [1.... 1., 0.], [0., 0., 0., 1.]])"
+      ]
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/core.py::CompoundModel.n_inputs",
+      "detail": "newly called from separability_matrix",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/core.py::CompoundModel.param_names",
+      "detail": "no longer called from Model._format_repr",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/core.py::Model.__len__",
+      "detail": "no longer called from Model._format_repr",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/core.py::Model.__repr__",
+      "detail": "no longer called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/core.py::Model._format_repr",
+      "detail": "no longer called from Model.__repr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/core.py::Model._format_repr",
+      "detail": "no longer called from Model._format_repr",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/core.py::Model.name",
+      "detail": "no longer called from Model._format_repr",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/parameters.py::Parameter.internal_unit",
+      "detail": "no longer called from Parameter.value",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/parameters.py::Parameter.unit",
+      "detail": "no longer called from param_repr_oneline",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/parameters.py::Parameter.value",
+      "detail": "no longer called from param_repr_oneline",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/parameters.py::param_repr_oneline",
+      "detail": "no longer called from Model._format_repr",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/separable.py::_separable",
+      "detail": "newly called from separability_matrix",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/separable.py::separability_matrix",
+      "detail": "newly called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/utils.py::_to_orig_unit",
+      "detail": "no longer called from Parameter.value",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/utils.py::array_repr_oneline",
+      "detail": "no longer called from array_repr_oneline",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/modeling/utils.py::array_repr_oneline",
+      "detail": "no longer called from param_repr_oneline",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/core.py::CompoundModel.param_names",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L3289->exit",
+        "entry->L3289"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/core.py::Model.__len__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L879->exit",
+        "entry->L879"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/core.py::Model.__repr__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L873->exit",
+        "entry->L873"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/core.py::Model._format_repr",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L2733->L2735",
+        "L2733->exit",
+        "L2735->L2737",
+        "L2735->L2739",
+        "L2735->exit",
+        "L2736->L2735",
+        "L2736->exit",
+        "L2737->L2735",
+        "L2737->L2736",
+        "L2739->L2742",
+        "L2742->L2747",
+        "L2747->L2750",
+        "L2750->exit",
+        "entry->L2733",
+        "entry->L2735"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/core.py::Model.name",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L1146->exit",
+        "entry->L1146"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/parameters.py::Parameter.internal_unit",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L378->exit",
+        "entry->L378"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/parameters.py::Parameter.unit",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L356->exit",
+        "entry->L356"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/parameters.py::Parameter.value",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L316->L317",
+        "L316->L324",
+        "L317->exit",
+        "L324->L328",
+        "L328->L329",
+        "L329->exit",
+        "entry->L316"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/parameters.py::param_repr_oneline",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L708->L709",
+        "L709->L711",
+        "L711->exit",
+        "entry->L708"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/separable.py::separability_matrix",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [],
+      "after": [
+        "L100->L101",
+        "L101->L102",
+        "L102->exit",
+        "L97->L100",
+        "entry->L97"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/utils.py::_to_orig_unit",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L377->L379",
+        "L379->exit",
+        "entry->L377"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/modeling/utils.py::array_repr_oneline",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]",
+        "astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]"
+      ],
+      "before": [
+        "L241->L242",
+        "L242",
+        "L242->exit",
+        "entry->L241",
+        "entry->L242"
+      ],
+      "after": []
+    }
+  ]
+}

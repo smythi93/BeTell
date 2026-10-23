@@ -1,0 +1,66 @@
+{
+  "base": "f58ca3e^",
+  "head": "f58ca3e",
+  "compared_tests": 2016,
+  "added_tests": [
+    "test_utils/test_sentinel.py::test_parameter_duplication[copy]",
+    "test_utils/test_sentinel.py::test_parameter_duplication[deepcopy]",
+    "test_utils/test_sentinel.py::test_parameter_duplication[pickle]",
+    "test_utils/test_sentinel.py::test_sentinel_duplication_preserves_identity[copy-Sentinel.FLAG_NEEDS_VALUE]",
+    "test_utils/test_sentinel.py::test_sentinel_duplication_preserves_identity[copy-Sentinel.UNSET]",
+    "test_utils/test_sentinel.py::test_sentinel_duplication_preserves_identity[deepcopy-Sentinel.FLAG_NEEDS_VALUE]",
+    "test_utils/test_sentinel.py::test_sentinel_duplication_preserves_identity[deepcopy-Sentinel.UNSET]",
+    "test_utils/test_sentinel.py::test_sentinel_duplication_preserves_identity[pickle-Sentinel.FLAG_NEEDS_VALUE]",
+    "test_utils/test_sentinel.py::test_sentinel_duplication_preserves_identity[pickle-Sentinel.UNSET]"
+  ],
+  "removed_tests": [],
+  "unstable_dropped": 440,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "src/click/_utils.py::<module>",
+    "src/click/_utils.py::Sentinel.__copy__",
+    "src/click/_utils.py::Sentinel.__deepcopy__",
+    "src/click/_utils.py::Sentinel.__reduce_ex__",
+    "tests/test_utils/test_sentinel.py::<module>",
+    "tests/test_utils/test_sentinel.py::test_parameter_duplication",
+    "tests/test_utils/test_sentinel.py::test_sentinel_duplication_preserves_identity"
+  ],
+  "seconds": {
+    "base": [
+      22.315792083740234,
+      20.80720615386963
+    ],
+    "head": [
+      21.257977962493896,
+      20.275346040725708
+    ]
+  },
+  "changes": [
+    {
+      "kind": "call",
+      "location": "src/click/testing.py::_NamedTextIOWrapper.close",
+      "detail": "no longer called from a test",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "test_utils/test_style.py::test_styling[styles6-\\x1b[35mx y\\x1b[0m]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "src/click/testing.py::_NamedTextIOWrapper.close",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "test_utils/test_style.py::test_styling[styles6-\\x1b[35mx y\\x1b[0m]"
+      ],
+      "before": [
+        "L184"
+      ],
+      "after": []
+    }
+  ]
+}

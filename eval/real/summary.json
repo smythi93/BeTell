@@ -1,0 +1,101 @@
+[
+  {
+    "project": "more-itertools",
+    "commit": "0cfb9f5",
+    "subject": "Micro-optimization for partition",
+    "betell_seconds": 74.89858102798462,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 14.498594045639038
+  },
+  {
+    "project": "more-itertools",
+    "commit": "67fcf64",
+    "subject": "fix: honour a falsey validator in bucket (#1308)",
+    "betell_seconds": 75.69909811019897,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 14.3609299659729
+  },
+  {
+    "project": "more-itertools",
+    "commit": "f89d7a3",
+    "subject": "Issue 1304: make ichunked match chunked for n=0 and negative n",
+    "betell_seconds": 75.34752702713013,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 14.864264249801636
+  },
+  {
+    "project": "more-itertools",
+    "commit": "ca0586d",
+    "subject": "Remove redundant seekable peek cache check",
+    "betell_seconds": 75.74525094032288,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 14.872224807739258
+  },
+  {
+    "project": "more-itertools",
+    "commit": "ed1bd2d",
+    "subject": "Optimize maxlen == 0",
+    "betell_seconds": 74.99214100837708,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 14.64736294746399
+  },
+  {
+    "project": "more-itertools",
+    "commit": "def2dab",
+    "subject": "Fix one()/only() dropping a falsy user-supplied exception",
+    "betell_seconds": 76.17060494422913,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 14.48347020149231
+  },
+  {
+    "project": "more-itertools",
+    "commit": "d032cab",
+    "subject": "fix nonpositive item limits in constrained_batches",
+    "betell_seconds": 72.10997986793518,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 13.827208995819092
+  },
+  {
+    "project": "click",
+    "commit": "f67c2bb",
+    "subject": "Fix short help abbreviation",
+    "betell_seconds": 123.01944780349731,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 5.126190185546875
+  },
+  {
+    "project": "click",
+    "commit": "05f6fd0",
+    "subject": "Always return a help record for an `Argument`",
+    "betell_seconds": 132.5714409351349,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 5.43312406539917
+  },
+  {
+    "project": "click",
+    "commit": "f58ca3e",
+    "subject": "Fix `copy`, `deepcopy` and `pickle` of `Sentinel` members",
+    "betell_seconds": 123.36318063735962,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 5.249781131744385
+  },
+  {
+    "project": "click",
+    "commit": "047adef",
+    "subject": "Preserve declaration order of help option names",
+    "betell_seconds": 116.79816675186157,
+    "ok": true,
+    "stderr": "",
+    "plain_seconds": 4.088409900665283
+  }
+]

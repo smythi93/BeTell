@@ -1,0 +1,206 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 107,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 200,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "sklearn/model_selection/_split.py::<module>",
+    "sklearn/model_selection/_split.py::_RepeatedSplits.__repr__",
+    "sklearn/model_selection/_split.py::_build_repr"
+  ],
+  "seconds": {
+    "base": [
+      8.898300886154175,
+      8.861038208007812
+    ],
+    "head": [
+      8.635054588317871,
+      8.309771299362183
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "outcome",
+      "location": "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sklearn/base.py::_pprint",
+      "detail": "newly called from _build_repr",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sklearn/base.py::_pprint",
+      "detail": "newly called from _pprint",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sklearn/model_selection/_split.py::_RepeatedSplits.__repr__",
+      "detail": "newly called from a test",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sklearn/model_selection/_split.py::_build_repr",
+      "detail": "newly called from _RepeatedSplits.__repr__",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sklearn/model_selection/_split.py::_build_repr",
+      "detail": "newly called from _build_repr",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sklearn/model_selection/_split.py::_build_repr",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_build_repr",
+        "sklearn/model_selection/tests/test_split.py::test_cross_validator_with_default_params",
+        "sklearn/model_selection/tests/test_split.py::test_group_shuffle_split",
+        "sklearn/model_selection/tests/test_split.py::test_leave_one_p_group_out"
+      ],
+      "before": [
+        "L2163->L2166"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sklearn/base.py::_pprint",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": [
+        "L100->L101",
+        "L101->L102",
+        "L102->L103",
+        "L103->L104",
+        "L104->L105",
+        "L104->L125",
+        "L105->L112",
+        "L112->L113",
+        "L113->L115",
+        "L115->L116",
+        "L115->L122",
+        "L116->L120",
+        "L120->L121",
+        "L121->L122",
+        "L122->L123",
+        "L123->L104",
+        "L125->L126",
+        "L126->L128",
+        "L128",
+        "L128->L129",
+        "L128->exit",
+        "L129->exit",
+        "L99->L100",
+        "entry->L128",
+        "entry->L99"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "sklearn/model_selection/_split.py::_build_repr",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedKFold]",
+        "sklearn/model_selection/tests/test_split.py::test_repeated_cv_repr[RepeatedStratifiedKFold]"
+      ],
+      "before": [],
+      "after": [
+        "L2143->L2144",
+        "L2144->L2146",
+        "L2146->L2148",
+        "L2148->L2151",
+        "L2151->L2152",
+        "L2151->L2153",
+        "L2151->exit",
+        "L2152->L2151",
+        "L2153->L2154",
+        "L2154->L2155",
+        "L2155->L2160",
+        "L2155->L2173",
+        "L2160->L2161",
+        "L2161->L2162",
+        "L2162->L2163",
+        "L2166->L2170",
+        "L2170->L2171",
+        "L2171->L2155",
+        "L2173->exit",
+        "entry->L2143",
+        "entry->L2151"
+      ]
+    }
+  ]
+}

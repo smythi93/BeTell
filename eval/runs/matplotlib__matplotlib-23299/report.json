@@ -1,0 +1,245 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 208,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 54,
+  "saturated_skipped": 414,
+  "touched_functions": [
+    "lib/matplotlib/__init__.py::rc_context"
+  ],
+  "seconds": {
+    "base": [
+      9.698294639587402,
+      9.561044931411743
+    ],
+    "head": [
+      9.751747369766235,
+      9.471916675567627
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "lib/matplotlib/__init__.py::RcParams._get_backend_or_none",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": [
+        "str:'module://aardvark'"
+      ]
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/__init__.py::RcParams.__setitem__",
+      "detail": "newly called from switch_backend",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/cbook/__init__.py::_backend_module_name",
+      "detail": "newly called from switch_backend",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/pyplot.py::_get_required_interactive_framework",
+      "detail": "newly called from switch_backend",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/pyplot.py::close",
+      "detail": "newly called from switch_backend",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/pyplot.py::install_repl_displayhook",
+      "detail": "newly called from switch_backend",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/pyplot.py::switch_backend",
+      "detail": "newly called from switch_backend",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "lib/matplotlib/pyplot.py::switch_backend",
+      "detail": "newly called from use",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/__init__.py::use",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": [
+        "L1141->L1148",
+        "L1148->L1150",
+        "L1150->L1151",
+        "L1151->L1155",
+        "L1155->L1166"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/cbook/__init__.py::_backend_module_name",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": [
+        "L2154->L2155",
+        "L2154->exit",
+        "L2155->L2154",
+        "entry->L2154"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/pyplot.py::_get_required_interactive_framework",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": [
+        "L184->L190",
+        "L190->exit",
+        "entry->L184"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/pyplot.py::install_repl_displayhook",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": [
+        "L133->L139",
+        "L139->L140",
+        "L140->L141",
+        "L141->L142",
+        "L142->exit",
+        "entry->L133"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/pyplot.py::switch_backend",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext"
+      ],
+      "before": [],
+      "after": [
+        "L224->L225",
+        "L225->L227",
+        "L227->L263",
+        "L263->L264",
+        "L263->L265",
+        "L264->L263",
+        "L265->L267",
+        "L267->L268",
+        "L268->L282",
+        "L282->L289",
+        "L289->L290",
+        "L289->L295",
+        "L290->exit",
+        "L295->L307",
+        "L307->L308",
+        "L307->L310",
+        "L308->L307",
+        "L310->L311",
+        "L311->L312",
+        "L312->L313",
+        "L312->L318",
+        "L313->L312",
+        "L313->L314",
+        "L314->L313",
+        "L318->L322",
+        "L322->exit",
+        "entry->L224",
+        "entry->L289"
+      ]
+    }
+  ]
+}

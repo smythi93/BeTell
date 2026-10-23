@@ -1,0 +1,1034 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 5,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 50,
+  "saturated_skipped": 8,
+  "touched_functions": [
+    "sphinx/ext/viewcode.py::collect_pages"
+  ],
+  "seconds": {
+    "base": [
+      5.889067888259888,
+      6.00610613822937
+    ],
+    "head": [
+      5.659400224685669,
+      5.965896368026733
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "sphinx/ext/viewcode.py::should_generate_module_page",
+      "detail": "now handled: FileNotFoundError",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "sphinx/ext/viewcode.py::should_generate_module_page",
+      "detail": "no longer handled: FileNotFoundError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "sphinx/ext/viewcode.py::collect_pages",
+      "detail": "no longer handled: StopIteration",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.get_outfilename",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules/index.xhtml'",
+        "str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules/spam/mod1.xhtml'",
+        "str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules/spam/mod2.xhtml'"
+      ],
+      "after": [
+        "str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules/spam/mod1.xhtml'",
+        "str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules/spam/mod2.xhtml'"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/highlighting.py::PygmentsBridge.highlight_block",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "str:'<div class=\"highlight\"><pre><span></span><span class=\"sd\">&quot;&quot;&quot;</span>\\n<span class..."
+      ],
+      "after": [
+        "str:'<div class=\"highlight\"><pre><span></span><span class=\"sd\">&quot;&quot;&quot;</span>\\n<span class..."
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/util/osutil.py::os_path",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "str:'_modules/index'",
+        "str:'_modules/spam/mod1'",
+        "str:'_modules/spam/mod2'"
+      ],
+      "after": [
+        "str:'_modules/spam/mod1'",
+        "str:'_modules/spam/mod2'"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/viewcode.py::should_generate_module_page",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "bool:False"
+      ],
+      "after": [
+        "bool:True"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/viewcode.py::collect_pages",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "tuple:('_modules/index', {'body': '<h1>All modules for which c...l\">spam.mod2</a></li>\\n</ul>', 'title'...",
+        "tuple:('_modules/spam/mod1', {'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'pa...",
+        "tuple:('_modules/spam/mod2', {'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'pa..."
+      ],
+      "after": [
+        "tuple:('_modules/spam/mod1', {'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'pa...",
+        "tuple:('_modules/spam/mod2', {'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'pa..."
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/builders/_epub_base.py::EpubBuilder.make_id",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "str:'epub-10'",
+        "str:'epub-11'",
+        "str:'epub-12'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/environment/__init__.py::BuildEnvironment.new_serialno",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "int:10",
+        "int:11",
+        "int:12"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/util/__init__.py::status_iterator",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "tuple:('spam.mod1', ('\"\"\"\\nmod1\\n\"\"\"\\n\\n\\ndef dec...ss attribute class_attr\"\"\"\\n', {'Class1': (...), 'C...",
+        "tuple:('spam.mod2', ('\"\"\"\\nmod2\\n\"\"\"\\n\\n\\ndef dec... this is Class2\\n \"\"\"\\n', {'Class2': (...), 'decora..."
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/util/console.py::colorize",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "str:'\\x1b[01mhighlighting module code... \\x1b[39;49;00m'",
+        "str:'\\x1b[94mspam.mod1\\x1b[39;49;00m'",
+        "str:'\\x1b[94mspam.mod2\\x1b[39;49;00m'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/util/console.py::create_color_func.inner",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "str:'\\x1b[01mhighlighting module code... \\x1b[39;49;00m'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/util/console.py::term_width_line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "str:'\\x1b[01mhighlighting module code... \\x1b[39;49;00m[ 50%] \\x1b[94mspam.mod1\\x1b[39;49;00m \\r'",
+        "str:'\\x1b[01mhighlighting module code... \\x1b[39;49;00m[100%] \\x1b[94mspam.mod2\\x1b[39;49;00m \\r'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/builders/_epub_base.py::EpubBuilder.handle_page",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(pagename=str:'_modules/index', addctx=dict:{'body': '<h1>All modules for which c...l\">spam.mod2</a></li>\\n</ul>', 'title': 'Overview: module..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod1', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'parents': [{'link': '../i..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod2', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'parents': [{'link': '../i..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)"
+      ],
+      "after": [
+        "(pagename=str:'_modules/spam/mod1', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'parents': [{'link': '../i..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod2', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'parents': [{'link': '../i..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.add_sidebars",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(pagename=str:'_modules/index', ctx=dict:{'builder': 'epub', 'copyright': '', 'css_files': [], 'css_tag': <function StandaloneHTMLBuil...a...)",
+        "(pagename=str:'_modules/spam/mod1', ctx=dict:{'builder': 'epub', 'copyright': '', 'css_files': [], 'css_tag': <function StandaloneHTMLBuil...a...)",
+        "(pagename=str:'_modules/spam/mod2', ctx=dict:{'builder': 'epub', 'copyright': '', 'css_files': [], 'css_tag': <function StandaloneHTMLBuil...a...)"
+      ],
+      "after": [
+        "(pagename=str:'_modules/spam/mod1', ctx=dict:{'builder': 'epub', 'copyright': '', 'css_files': [], 'css_tag': <function StandaloneHTMLBuil...a...)",
+        "(pagename=str:'_modules/spam/mod2', ctx=dict:{'builder': 'epub', 'copyright': '', 'css_files': [], 'css_tag': <function StandaloneHTMLBuil...a...)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.get_outfilename",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(pagename=str:'_modules/index')",
+        "(pagename=str:'_modules/spam/mod1')",
+        "(pagename=str:'_modules/spam/mod2')"
+      ],
+      "after": [
+        "(pagename=str:'_modules/spam/mod1')",
+        "(pagename=str:'_modules/spam/mod2')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.handle_page",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(pagename=str:'_modules/index', addctx=dict:{'body': '<h1>All modules for which c...l\">spam.mod2</a></li>\\n</ul>', 'doctype': '<!DOCTYPE html..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod1', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'doctype': '<!DOCTYPE html..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod2', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'doctype': '<!DOCTYPE html..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)"
+      ],
+      "after": [
+        "(pagename=str:'_modules/spam/mod1', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'doctype': '<!DOCTYPE html..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod2', addctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'doctype': '<!DOCTYPE html..., templatename=str:'page.html', outfilename=NoneType:None, event_arg=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.update_page_context",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(pagename=str:'_modules/index', templatename=str:'page.html', ctx=dict:{'body': '<h1>All modules for which c...l\">spam.mod2</a></li>\\n</ul>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod1', templatename=str:'page.html', ctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod2', templatename=str:'page.html', ctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)"
+      ],
+      "after": [
+        "(pagename=str:'_modules/spam/mod1', templatename=str:'page.html', ctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)",
+        "(pagename=str:'_modules/spam/mod2', templatename=str:'page.html', ctx=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/builders/html/__init__.py::setup_js_tag_helper",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/index', templatexname=str:'page.html', context=dict:{'body': '<h1>All modules for which c...l\">spam.mod2</a></li>\\n</ul>', 'builder': 'epub', 'copyri..., doctree=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod1', templatexname=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., doctree=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod2', templatexname=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., doctree=NoneType:None)"
+      ],
+      "after": [
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod1', templatexname=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., doctree=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod2', templatexname=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., doctree=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/domains/math.py::MathDomain.has_equations",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(docname=str:'_modules/index')",
+        "(docname=str:'_modules/spam/mod1')",
+        "(docname=str:'_modules/spam/mod2')"
+      ],
+      "after": [
+        "(docname=str:'_modules/spam/mod1')",
+        "(docname=str:'_modules/spam/mod2')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/mathjax.py::install_mathjax",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/index', templatename=str:'page.html', context=dict:{'body': '<h1>All modules for which c...l\">spam.mod2</a></li>\\n</ul>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod1', templatename=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod2', templatename=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)"
+      ],
+      "after": [
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod1', templatename=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='epub'>, pagename=str:'_modules/spam/mod2', templatename=str:'page.html', context=dict:{'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></div>', 'builder': 'epub', 'copyri..., event_arg=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/highlighting.py::PygmentsBridge.get_lexer",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(source=str:'\"\"\"\\nmod1\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func1(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)",
+        "(source=str:'\"\"\"\\nmod2\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func2(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)"
+      ],
+      "after": [
+        "(source=str:'\"\"\"\\nmod1\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func1(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)",
+        "(source=str:'\"\"\"\\nmod2\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func2(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/highlighting.py::PygmentsBridge.highlight_block",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(source=str:'\"\"\"\\nmod1\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func1(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)",
+        "(source=str:'\"\"\"\\nmod2\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func2(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)"
+      ],
+      "after": [
+        "(source=str:'\"\"\"\\nmod1\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func1(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)",
+        "(source=str:'\"\"\"\\nmod2\\n\"\"\"\\n\\n\\ndef decorator(f):\\n return f\\n\\n\\n@decorator\\ndef func2(a, b):\\n \"\"\"\\n this ..., lang=str:'default', opts=NoneType:None, force=bool:False, location=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/jinja2glue.py::BuiltinTemplateLoader.render",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(template=str:'page.html', context=dict:{'alabaster_version': '0.7.11', 'body': '<h1>All modules for which c...l\">spam.mod2</a></li>\\n</u...)",
+        "(template=str:'page.html', context=dict:{'alabaster_version': '0.7.11', 'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></di...)"
+      ],
+      "after": [
+        "(template=str:'page.html', context=dict:{'alabaster_version': '0.7.11', 'body': '<h1>Source code for spam.mo...;</span></div>\\n</pre></di...)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/util/osutil.py::ensuredir",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(path=str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules')",
+        "(path=str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules/spam')"
+      ],
+      "after": [
+        "(path=str:'/tmp/<pytest-tmp>/ext-viewcode/_build/epub/_modules/spam')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/util/osutil.py::os_path",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "(canonicalpath=str:'_modules/index')",
+        "(canonicalpath=str:'_modules/spam/mod1')",
+        "(canonicalpath=str:'_modules/spam/mod2')"
+      ],
+      "after": [
+        "(canonicalpath=str:'_modules/spam/mod1')",
+        "(canonicalpath=str:'_modules/spam/mod2')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/builders/_epub_base.py::EpubBuilder.make_id",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "(name=str:'_modules/index.xhtml')",
+        "(name=str:'_modules/spam/mod1.xhtml')",
+        "(name=str:'_modules/spam/mod2.xhtml')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/util/console.py::colorize",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "(name=str:'blue', text=str:'spam.mod1', input_mode=bool:False)",
+        "(name=str:'blue', text=str:'spam.mod2', input_mode=bool:False)",
+        "(name=str:'bold', text=str:'highlighting module code... ', input_mode=bool:False)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/util/console.py::create_color_func.inner",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "(text=str:'highlighting module code... ')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/util/console.py::term_width_line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "(text=str:'\\x1b[01mhighlighting module code... \\x1b[39;49;00m[ 50%] \\x1b[94mspam.mod1\\x1b[39;49;00m')",
+        "(text=str:'\\x1b[01mhighlighting module code... \\x1b[39;49;00m[100%] \\x1b[94mspam.mod2\\x1b[39;49;00m')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/config.py::Config.__getattr__",
+      "detail": "newly called from collect_pages",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/highlighting.py::PygmentsBridge.highlight_block",
+      "detail": "newly called from collect_pages",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/application.py::Sphinx.emit_firstresult",
+      "detail": "no longer called from get_module_filename",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/builders/__init__.py::Builder.get_relative_uri",
+      "detail": "no longer called from collect_pages",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/builders/_epub_base.py::EpubBuilder.handle_page",
+      "detail": "no longer called from StandaloneHTMLBuilder.gen_pages_from_extensions",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/viewcode.py::get_module_filename",
+      "detail": "no longer called from should_generate_module_page",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/viewcode.py::should_generate_module_page",
+      "detail": "no longer called from collect_pages",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/highlighting.py::PygmentsBridge.highlight_block",
+      "detail": "no longer called from collect_pages",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/locale/__init__.py::get_translation.gettext",
+      "detail": "no longer called from collect_pages",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/pycode/__init__.py::ModuleAnalyzer.get_module_source",
+      "detail": "no longer called from get_module_filename",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/__init__.py::status_iterator",
+      "detail": "no longer called from collect_pages",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/viewcode.py::collect_pages",
+      "detail": "no longer called from status_iterator",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/viewcode.py::should_generate_module_page",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "L162->L163",
+        "L163->L167",
+        "L167->L168",
+        "L168->L169",
+        "L169->L171",
+        "L171->L172",
+        "L172->L174",
+        "L172->L175",
+        "L174->exit",
+        "L175->L176",
+        "L176->L178",
+        "L178->exit",
+        "entry->L162"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/viewcode.py::should_generate_module_page",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [],
+      "after": [
+        "L172->L175",
+        "L175->L176",
+        "L176->L178",
+        "L178->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/highlighting.py::PygmentsBridge.get_lexer",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [],
+      "after": [
+        "L101->L102",
+        "L102->L105",
+        "L105->L107",
+        "L95->L101"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/viewcode.py::collect_pages",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_local_source_files",
+        "tests/test_ext_viewcode.py::test_viewcode",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default",
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [
+        "L183->L189",
+        "L189->L190",
+        "L190->L192",
+        "L192->L194",
+        "L194->L195",
+        "L194->L199",
+        "L194->L253",
+        "L195->L196",
+        "L196->L197",
+        "L197->L198",
+        "L198->L194",
+        "L198->exit",
+        "L199->L201",
+        "L201->L202",
+        "L201->L204",
+        "L202->L194",
+        "L204->L206",
+        "L206->L208",
+        "L208->L209",
+        "L209->L212",
+        "L212->L214",
+        "L214->L216",
+        "L216->L217",
+        "L217->L222",
+        "L222->L223",
+        "L223->L224",
+        "L223->L232",
+        "L224->L225",
+        "L225->L227",
+        "L226->L230",
+        "L227->L226",
+        "L227->L228",
+        "L227->L229",
+        "L228->L227",
+        "L229->L227",
+        "L230->L223",
+        "L232->L233",
+        "L233->L234",
+        "L234->L235",
+        "L234->L241",
+        "L235->L236",
+        "L236->L234",
+        "L241->L242",
+        "L241->L243",
+        "L242->L241",
+        "L243->L246",
+        "L245->L251",
+        "L246->L247",
+        "L247->L248",
+        "L248->L245",
+        "L248->L249",
+        "L249->L248",
+        "L251->L194",
+        "L251->exit",
+        "L253->L256",
+        "L256->L258",
+        "L258->L259",
+        "L259->L260",
+        "L259->L273",
+        "L260->L261",
+        "L260->L264",
+        "L261->L262",
+        "L262->L269",
+        "L264->L265",
+        "L265->L268",
+        "L268->L269",
+        "L269->L259",
+        "L269->L270",
+        "L270->L271",
+        "L270->L272",
+        "L271->L270",
+        "L272->L269",
+        "L273->L275",
+        "L274->L280",
+        "L275->L276",
+        "L276->L274",
+        "L276->L277",
+        "L277->L276",
+        "L280->exit",
+        "entry->L198"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/viewcode.py::collect_pages",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_enabled"
+      ],
+      "before": [],
+      "after": [
+        "L201->L204",
+        "L204->L206",
+        "L206->L208",
+        "L208->L209",
+        "L209->L212",
+        "L212->L214",
+        "L214->L216",
+        "L216->L217",
+        "L217->L222",
+        "L222->L223",
+        "L223->L224",
+        "L223->L232",
+        "L224->L225",
+        "L225->L227",
+        "L226->L230",
+        "L227->L226",
+        "L227->L228",
+        "L227->L229",
+        "L228->L227",
+        "L229->L227",
+        "L230->L223",
+        "L232->L233",
+        "L233->L234",
+        "L234->L235",
+        "L234->L241",
+        "L235->L236",
+        "L236->L234",
+        "L241->L242",
+        "L241->L243",
+        "L242->L241",
+        "L243->L246",
+        "L245->L251",
+        "L246->L247",
+        "L247->L248",
+        "L248->L245",
+        "L248->L249",
+        "L249->L248",
+        "L251->L194",
+        "L251->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/builders/_epub_base.py::EpubBuilder.build_content",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "L574->L575",
+        "L575->L576",
+        "L576->L573"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.gen_pages_from_extensions",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "L645->L646",
+        "L646->L645"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/viewcode.py::get_module_filename",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "L149->L150",
+        "L150->L153",
+        "L153->L154",
+        "L154->L155",
+        "L155->exit",
+        "entry->L149"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/highlighting.py::PygmentsBridge.get_lexer",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "L101->L102",
+        "L102->L105",
+        "L105->L107",
+        "L95->L101"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/pycode/__init__.py::ModuleAnalyzer.get_module_source",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "L38->L39",
+        "L39->L42",
+        "L42->L43",
+        "L43->L44",
+        "L44->L46",
+        "L46->L47",
+        "L47->L48",
+        "L48->L50",
+        "L50->exit",
+        "entry->L38"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/osutil.py::relative_uri",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_viewcode.py::test_viewcode_epub_default"
+      ],
+      "before": [
+        "L65->L66",
+        "L66->L67",
+        "L66->L68",
+        "L67->L70",
+        "L68->L69",
+        "L69->L65"
+      ],
+      "after": []
+    }
+  ]
+}

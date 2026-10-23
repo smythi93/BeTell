@@ -1,0 +1,20 @@
+# Example workflow: .github/workflows/betell.yml
+name: betell
+on: pull_request
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  behavior:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # betell checks out the base revision as well
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e . pytest
+      - uses: smythi93/BeTell@v0.1.0
+        with:
+          pytest-args: tests

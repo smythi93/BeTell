@@ -1,0 +1,25 @@
+{
+  "instance_id": "astropy__astropy-14365",
+  "test_files": [
+    "astropy/io/ascii/tests/test_qdp.py"
+  ],
+  "plain_base-0_seconds": 1.7785241603851318,
+  "plain_base-0_pytest": 0.08,
+  "plain_base-1_seconds": 1.0051333904266357,
+  "plain_base-1_pytest": 0.07,
+  "plain_base_tail": "ueError\n\u001b[36m\u001b[1m=========================== short test summary info ============================\u001b[0m\n\u001b[31mFAILED\u001b[0m astropy/io/ascii/tests/test_qdp.py::\u001b[1mtest_roundtrip[True]\u001b[0m - ValueError: Unrecognized QDP line: read terr 1\n\u001b[31m\u001b[31m\u001b[1m1 failed\u001b[0m, \u001b[32m8 passed\u001b[0m\u001b[31m in 0.07s\u001b[0m\u001b[0m\n",
+  "recorded_novalues_seconds": 1.5129435062408447,
+  "recorded_novalues_pytest": 0.43,
+  "recorded_base-0_seconds": 2.0803918838500977,
+  "recorded_base-0_pytest": 0.98,
+  "recorded_base-1_seconds": 2.1335220336914062,
+  "recorded_base-1_pytest": 1.01,
+  "recorded_head-0_seconds": 2.152616024017334,
+  "recorded_head-0_pytest": 1.04,
+  "recorded_head-1_seconds": 2.151902675628662,
+  "recorded_head-1_pytest": 1.03,
+  "changed_files": [
+    "astropy/io/ascii/qdp.py"
+  ],
+  "ok": true
+}

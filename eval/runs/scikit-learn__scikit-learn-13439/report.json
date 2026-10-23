@@ -1,0 +1,97 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 41,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 239,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "sklearn/pipeline.py::<module>",
+    "sklearn/pipeline.py::Pipeline.__len__"
+  ],
+  "seconds": {
+    "base": [
+      13.453288555145264,
+      13.236856937408447
+    ],
+    "head": [
+      17.844171047210693,
+      12.951987266540527
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "sklearn/tests/test_pipeline.py::test_make_pipeline_memory",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "sklearn/tests/test_pipeline.py::test_make_pipeline_memory"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sklearn/externals/joblib/func_inspect.py::get_func_code",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "sklearn/tests/test_pipeline.py::test_pipeline_memory"
+      ],
+      "before": [
+        "tuple:('def _fit_transform_one(tran... res * weight, transformer\\n', '<root>/sklearn/pipeline.py', 654)"
+      ],
+      "after": [
+        "tuple:('def _fit_transform_one(tran... res * weight, transformer\\n', '<root>/sklearn/pipeline.py', 660)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sklearn/externals/joblib/_store_backends.py::StoreBackendMixin.store_cached_func_code",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "sklearn/tests/test_pipeline.py::test_pipeline_memory"
+      ],
+      "before": [
+        "(path=list:['sklearn/pipeline/_fit_transform_one'], func_code=str:\"# first line: 654\\ndef _fit_transform_one(transformer, X, y, weight, **fit_params):\\n if hasattr...)"
+      ],
+      "after": [
+        "(path=list:['sklearn/pipeline/_fit_transform_one'], func_code=str:\"# first line: 660\\ndef _fit_transform_one(transformer, X, y, weight, **fit_params):\\n if hasattr...)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sklearn/externals/joblib/memory.py::MemorizedFunc._write_func_code",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "sklearn/tests/test_pipeline.py::test_pipeline_memory"
+      ],
+      "before": [
+        "(func_code=str:\"def _fit_transform_one(transformer, X, y, weight, **fit_params):\\n if hasattr(transformer, 'fit_..., first_line=int:654)"
+      ],
+      "after": [
+        "(func_code=str:\"def _fit_transform_one(transformer, X, y, weight, **fit_params):\\n if hasattr(transformer, 'fit_..., first_line=int:660)"
+      ]
+    },
+    {
+      "kind": "call",
+      "location": "sklearn/pipeline.py::Pipeline.__len__",
+      "detail": "newly called from a test",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "sklearn/tests/test_pipeline.py::test_make_pipeline_memory"
+      ],
+      "before": [],
+      "after": []
+    }
+  ]
+}

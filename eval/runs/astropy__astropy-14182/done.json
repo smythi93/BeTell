@@ -1,0 +1,25 @@
+{
+  "instance_id": "astropy__astropy-14182",
+  "test_files": [
+    "astropy/io/ascii/tests/test_rst.py"
+  ],
+  "plain_base-0_seconds": 1.7009756565093994,
+  "plain_base-0_pytest": 0.05,
+  "plain_base-1_seconds": 0.9861602783203125,
+  "plain_base-1_pytest": 0.05,
+  "plain_base_tail": "=============== short test summary info ============================\u001b[0m\n\u001b[31mFAILED\u001b[0m astropy/io/ascii/tests/test_rst.py::\u001b[1mtest_rst_with_header_rows\u001b[0m - TypeError: __init__() got an unexpected keyword argument 'header_rows'\n\u001b[31m\u001b[31m\u001b[1m1 failed\u001b[0m, \u001b[32m9 passed\u001b[0m\u001b[31m in 0.05s\u001b[0m\u001b[0m\n",
+  "recorded_novalues_seconds": 1.2465779781341553,
+  "recorded_novalues_pytest": 0.21,
+  "recorded_base-0_seconds": 1.4545857906341553,
+  "recorded_base-0_pytest": 0.34,
+  "recorded_base-1_seconds": 1.39530348777771,
+  "recorded_base-1_pytest": 0.36,
+  "recorded_head-0_seconds": 1.4150774478912354,
+  "recorded_head-0_pytest": 0.33,
+  "recorded_head-1_seconds": 1.408398151397705,
+  "recorded_head-1_pytest": 0.29,
+  "changed_files": [
+    "astropy/io/ascii/rst.py"
+  ],
+  "ok": true
+}

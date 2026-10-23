@@ -1,0 +1,25 @@
+{
+  "instance_id": "matplotlib__matplotlib-23476",
+  "test_files": [
+    "lib/matplotlib/tests/test_figure.py"
+  ],
+  "plain_base-0_seconds": 15.12230658531189,
+  "plain_base-0_pytest": 14.26,
+  "plain_base-1_seconds": 12.266945362091064,
+  "plain_base-1_pytest": 11.57,
+  "plain_base_tail": "gure size 2352x1764 with 0 Axes>.dpi\n\nlib/matplotlib/tests/test_figure.py:1391: AssertionError\n=========================== short test summary info ============================\nFAILED lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio\n1 failed, 104 passed, 7 skipped in 11.57s\n",
+  "recorded_novalues_seconds": 73.63084077835083,
+  "recorded_novalues_pytest": 68.3,
+  "recorded_base-0_seconds": 97.93416333198547,
+  "recorded_base-0_pytest": 91.17,
+  "recorded_base-1_seconds": 97.55534720420837,
+  "recorded_base-1_pytest": 90.66,
+  "recorded_head-0_seconds": 96.74492573738098,
+  "recorded_head-0_pytest": 89.85,
+  "recorded_head-1_seconds": 97.58216953277588,
+  "recorded_head-1_pytest": 90.68,
+  "changed_files": [
+    "lib/matplotlib/figure.py"
+  ],
+  "ok": true
+}

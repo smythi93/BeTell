@@ -1,0 +1,41 @@
+## Behavioral diff `base` → `gold`
+
+Compared 832 test(s) on both revisions. 0 test(s) exist only in head and 0 only in base. 5505 unstable observation(s) were dropped after repeated runs.
+
+**408 functions behave differently.** Not edited by this pull request: 407. Different in tests whose outcome stays the same: 0. Test outcomes that changed: 1.
+
+### Test outcomes that changed
+
+- `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]` failed → passed
+
+<details><summary>Behavior behind the changed test outcomes (408 function(s))</summary>
+
+- `lib/matplotlib/__init__.py::_preprocess_data.inner` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: no longer raised: StopIteration.
+- `lib/matplotlib/axes/_axes.py::Axes._convert_dx` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: now handled: TypeError; return values changed (new `float64:0.8`, `float64:nan` (+2 more), gone `NoneType:None`); arguments changed (new `(dx=float:0.8, x0=list:[1], xconv=ndarray:array([1]), convert=method:<Artist.convert_xunits>)`, `(dx=list:[1], x0=int:0, xconv=ndarray:array(0), convert=method:<Artist.convert_yunits>)` (+1 more)); newly called from `Axes._convert_dx`; control flow changed (21 newly taken, 2 no longer taken line transitions).
+- `lib/matplotlib/axes/_axes.py::Axes.bar` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: no longer raised: StopIteration; arguments changed (new `(x=list:[1], height=list:[1], width=float:0.8, bottom=NoneType:None, align=str:'center')`); control flow changed (62 newly taken, 1 no longer taken line transitions).
+- `lib/matplotlib/colors.py::to_rgba` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: now handled: TypeError; newly called from `GraphicsContextBase.__init__`, `GraphicsContextBase.set_foreground`, `Line2D.draw` (+1 more); control flow changed (9 newly taken line transitions).
+- `lib/matplotlib/spines.py::Spines.__getitem__` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: now raised: KeyError; newly called from `XAxis._update_label_position`, `YAxis._update_label_position`, `YAxis._update_offset_text_position` (+2 more).
+- `lib/matplotlib/_api/deprecation.py::delete_parameter.wrapper` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `NoneType:None`, `RendererAgg:<RendererAgg>` (+1 more)); newly called from `FigureCanvasAgg.draw`, `FigureCanvasBase._switch_canvas_and_return_print_method`, `_AxesBase._update_title_position` (+1 more); control flow changed (11 newly taken line transitions).
+- `lib/matplotlib/artist.py::Artist.get_label` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `str:''`); newly called from `_AxesBase.add_container`.
+- `lib/matplotlib/artist.py::Artist.is_transform_set` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `bool:False`).
+- `lib/matplotlib/axes/_base.py::_AxesBase._process_unit_info` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `list:[(0.0, 1.05)]`, `list:[(0.5599999999999999, 1.44)]` (+1 more)); arguments changed (new `(datasets=list:[('x', (0.5599999999999999, 1.44))], kwargs=NoneType:None, convert=bool:False)`, `(datasets=list:[('x', [1]), ('y', [1])], kwargs=dict:{}, convert=bool:False)` (+1 more)).
+- `lib/matplotlib/axes/_base.py::_AxesBase._validate_converted_limits` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float:0.0`, `float:0.5599999999999999` (+2 more)); arguments changed (new `(limit=float:0.0, convert=method:<Axis.convert_units>)`, `(limit=float:0.5599999999999999, convert=method:<Axis.convert_units>)` (+2 more)).
+- `lib/matplotlib/axes/_base.py::_process_plot_var_args.get_next_color` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `str:'#ff7f0e'`).
+- `lib/matplotlib/axis.py::Axis._set_lim` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `tuple:(0.0, 1.05)`, `tuple:(0.5599999999999999, 1.44)`); arguments changed (new `(v0=float:0.0, v1=float:1.05, emit=bool:True, auto=NoneType:None)`, `(v0=float:0.5599999999999999, v1=float:1.44, emit=bool:True, auto=NoneType:None)`); newly called from `_AxesBase.set_xlim`, `_AxesBase.set_ylim`; control flow changed (1 newly taken line transitions).
+- `lib/matplotlib/axis.py::Axis.limit_range_for_scale` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `tuple:(0.0, 1.05)`, `tuple:(0.5599999999999999, 1.44)`); arguments changed (new `(vmin=float:0.0, vmax=float:1.05)`, `(vmin=float:0.5599999999999999, vmax=float:1.44)`).
+- `lib/matplotlib/axis.py::XAxis.get_minpos` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float64:0.6`).
+- `lib/matplotlib/axis.py::YAxis.get_minpos` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float64:1.0`).
+- `lib/matplotlib/cbook/__init__.py::_safe_first_finite` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float64:nan`, `float:0.0` (+4 more)); newly called from `safe_first_element`; control flow changed (3 newly taken line transitions).
+- `lib/matplotlib/cbook/__init__.py::sanitize_sequence` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `list:[1]`); arguments changed (new `(data=list:[1])`).
+- `lib/matplotlib/scale.py::ScaleBase.limit_range_for_scale` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `tuple:(0.0, 1.05)`, `tuple:(0.5599999999999999, 1.44)` (+1 more)); arguments changed (new `(vmin=float:0.0, vmax=float:1.0, minpos=float64:1.0)`, `(vmin=float:0.0, vmax=float:1.05, minpos=float64:1.0)` (+2 more)); newly called from `_AxesBase.autoscale_view.handle_single_axis`.
+- `lib/matplotlib/ticker.py::Locator.nonsingular` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `tuple:(0.0, 1.05)`, `tuple:(0.5599999999999999, 1.44)` (+1 more)); arguments changed (new `(v0=float64:0.0, v1=float64:1.0)`, `(v0=float64:0.6, v1=float64:1.4)` (+2 more)); newly called from `_AxesBase.autoscale_view.handle_single_axis`.
+- `lib/matplotlib/transforms.py::Bbox.frozen` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `Bbox:Bbox([[0.125, 0.09999999999999998], [0.9, 0.9]])`, `Bbox:Bbox([[80.0, 47.999999999999...[80.0, 431.99999999999994]])` (+1 more)); newly called from `Spine.get_window_extent`, `_AxesBase.get_position`.
+- `lib/matplotlib/transforms.py::Bbox.minposx` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float64:0.6`); newly called from `_AxesBase.autoscale_view.handle_single_axis`.
+- `lib/matplotlib/transforms.py::Bbox.minposy` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float64:1.0`); newly called from `_AxesBase.autoscale_view.handle_single_axis`.
+- `lib/matplotlib/transforms.py::BboxBase.frozen` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `Bbox:Bbox([[0.125, 0.09999999999999998], [0.9, 0.9]])`, `Bbox:Bbox([[80.0, 47.999999999999...[80.0, 431.99999999999994]])` (+1 more)).
+- `lib/matplotlib/transforms.py::BboxBase.height` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float64:4.800000000000001`); newly called from `YAxis.get_tick_space`.
+- `lib/matplotlib/transforms.py::BboxBase.width` in 1 test(s), e.g. `lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]`: return values changed (new `float64:6.2`); newly called from `XAxis.get_tick_space`.
+- ... and 383 more function(s)
+
+</details>
+

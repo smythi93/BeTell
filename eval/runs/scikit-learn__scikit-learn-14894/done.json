@@ -1,0 +1,25 @@
+{
+  "instance_id": "scikit-learn__scikit-learn-14894",
+  "test_files": [
+    "sklearn/svm/tests/test_svm.py"
+  ],
+  "plain_base-0_seconds": 4.388849258422852,
+  "plain_base-0_pytest": 3.67,
+  "plain_base-1_seconds": 4.35295295715332,
+  "plain_base-1_pytest": 3.67,
+  "plain_base_tail": "p.arange(n_SV), n_class)\n        dual_coef_indptr = np.arange(0, dual_coef_indices.size + 1,\n>                                    dual_coef_indices.size / n_class)\nE       ZeroDivisionError: float division by zero\n\nsklearn/svm/base.py:291: ZeroDivisionError\n1 failed, 85 passed, 13 warnings in 3.67s\n",
+  "recorded_novalues_seconds": 5.165556192398071,
+  "recorded_novalues_pytest": 4.27,
+  "recorded_base-0_seconds": 14.877556562423706,
+  "recorded_base-0_pytest": 13.91,
+  "recorded_base-1_seconds": 14.650457859039307,
+  "recorded_base-1_pytest": 13.71,
+  "recorded_head-0_seconds": 14.43947172164917,
+  "recorded_head-0_pytest": 13.51,
+  "recorded_head-1_seconds": 14.416034698486328,
+  "recorded_head-1_pytest": 13.47,
+  "changed_files": [
+    "sklearn/svm/base.py"
+  ],
+  "ok": true
+}

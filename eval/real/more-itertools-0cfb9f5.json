@@ -1,0 +1,23 @@
+{
+  "base": "0cfb9f5^",
+  "head": "0cfb9f5",
+  "compared_tests": 768,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 14,
+  "saturated_skipped": 1,
+  "touched_functions": [
+    "more_itertools/recipes.py::partition.gen"
+  ],
+  "seconds": {
+    "base": [
+      18.775556087493896,
+      18.25641393661499
+    ],
+    "head": [
+      17.774506092071533,
+      18.060068130493164
+    ]
+  },
+  "changes": []
+}

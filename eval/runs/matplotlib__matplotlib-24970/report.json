@@ -1,0 +1,109 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 256,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 112,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "lib/matplotlib/colors.py::Colormap.__call__"
+  ],
+  "seconds": {
+    "base": [
+      21.367554187774658,
+      21.347084045410156
+    ],
+    "head": [
+      22.961597442626953,
+      20.942500352859497
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8]",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "lib/matplotlib/colors.py::Colormap.__call__",
+      "detail": "no longer raised: DeprecationWarning",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8]"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "lib/matplotlib/colors.py::Colormap.__call__",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8]"
+      ],
+      "before": [],
+      "after": [
+        "(X=int:0, alpha=NoneType:None, bytes=bool:False)"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/colors.py::Colormap.__call__",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "lib/matplotlib/tests/test_colors.py::test_BoundaryNorm",
+        "lib/matplotlib/tests/test_colors.py::test_boundarynorm_and_colorbarbase[png]",
+        "lib/matplotlib/tests/test_colors.py::test_cmap_and_norm_from_levels_and_colors2",
+        "lib/matplotlib/tests/test_colors.py::test_cmap_and_norm_from_levels_and_colors[png]",
+        "lib/matplotlib/tests/test_colors.py::test_colormap_invalid",
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[float16]",
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[float]",
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[int]",
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8]"
+      ],
+      "before": [
+        "L717->L731",
+        "L731->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "lib/matplotlib/colors.py::Colormap.__call__",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "lib/matplotlib/tests/test_colors.py::test_index_dtype[uint8]"
+      ],
+      "before": [],
+      "after": [
+        "L706->L711",
+        "L731->L732",
+        "L732->L733",
+        "L733->L735",
+        "L735->L736",
+        "L736->L739",
+        "L739->L741",
+        "L741->L758",
+        "L758->L759",
+        "L759->L760",
+        "L760->exit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "instance_id": "scikit-learn__scikit-learn-10297",
+  "test_files": [
+    "sklearn/linear_model/tests/test_ridge.py"
+  ],
+  "plain_base-0_seconds": 1.3238110542297363,
+  "plain_base-0_pytest": 0.84,
+  "plain_base-1_seconds": 1.1495115756988525,
+  "plain_base-1_pytest": 0.65,
+  "plain_base_tail": " 'store_cv_values'\n\nsklearn/linear_model/tests/test_ridge.py:609: TypeError\n=========================== short test summary info ============================\nFAILED sklearn/linear_model/tests/test_ridge.py::test_ridge_classifier_cv_store_cv_values\n1 failed, 28 passed, 1 xfailed, 22 warnings in 0.65s\n",
+  "recorded_novalues_seconds": 2.1116020679473877,
+  "recorded_novalues_pytest": 1.48,
+  "recorded_base-0_seconds": 8.088612794876099,
+  "recorded_base-0_pytest": 7.43,
+  "recorded_base-1_seconds": 7.8809802532196045,
+  "recorded_base-1_pytest": 7.26,
+  "recorded_head-0_seconds": 8.315828084945679,
+  "recorded_head-0_pytest": 7.69,
+  "recorded_head-1_seconds": 7.910240173339844,
+  "recorded_head-1_pytest": 7.28,
+  "changed_files": [
+    "sklearn/linear_model/ridge.py"
+  ],
+  "ok": true
+}

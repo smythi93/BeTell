@@ -1,0 +1,4642 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 125,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 2,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "pylint/lint/expand_modules.py::_is_ignored_file"
+  ],
+  "seconds": {
+    "base": [
+      55.13288331031799,
+      53.62919640541077
+    ],
+    "head": [
+      51.15477538108826,
+      54.095362186431885
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.visit_import",
+      "detail": "no longer raised: StopIteration",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "pylint/checkers/format.py::FormatChecker.visit_default",
+      "detail": "no longer handled: AttributeError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "pylint/checkers/utils.py::in_type_checking_block",
+      "detail": "no longer handled: StopIteration",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler._is_one_message_enabled",
+      "detail": "no longer handled: KeyError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "pylint/lint/pylinter.py::PyLinter._add_one_message",
+      "detail": "no longer handled: KeyError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "pylint/utils/utils.py::get_module_and_frameid",
+      "detail": "no longer handled: AttributeError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/format.py::FormatChecker.specific_splitlines",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "list:['import re\\n']"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/format.py::TokenWrapper.line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "str:'import re\\n'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/format.py::TokenWrapper.start_line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "int:2"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/format.py::TokenWrapper.type",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "int:1"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_imports_order",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "tuple:([(<Import l.1 at 0x?>, 're')], [], [])"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/similar.py::LineSet.__len__",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "int:1"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/similar.py::SimilarChecker.close",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "int:1"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/similar.py::stripped_lines",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "dict:{1: True}",
+        "tuple:(1, True)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/unicode.py::_fix_utf16_32_line_stream",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "bytes:b'import re\\n'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/utils.py::get_node_last_lineno",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "int:1"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/variables.py::NamesConsumer.to_consume",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "dict:{'re': [<Import l.1 at 0x?>]}"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/checkers/variables.py::_fix_dot_imports",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "list:[('re', <Import l.1 at 0x?>)]"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/caching.py::_get_pdata_path",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "PosixPath:PosixPath('/root/.cache/pylint/failing_1.stats')",
+        "str:'failing'"
+      ],
+      "after": [
+        "PosixPath:PosixPath('/root/.cache/pylint/package_1.stats')",
+        "str:'package'"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/expand_modules.py::_is_in_ignore_list_re",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": [
+        "bool:True"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/pylinter.py::PyLinter._iterate_file_descrs",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "FileItem:FileItem(name='failing', fil...ling.py', modpath='failing')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/pylinter.py::PyLinter._report_evaluation",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "int:0"
+      ],
+      "after": [
+        "NoneType:None"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/pylinter.py::PyLinter.any_fail_on_issues",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "bool:False"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/pylinter.py::PyLinter.generate_reports",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "int:0"
+      ],
+      "after": [
+        "NoneType:None"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/pylinter.py::PyLinter.get_ast",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "Module:<Module.failing l.0 at 0x?>"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/message/message_definition_store.py::MessageDefinitionStore.get_message_definitions",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "list:[MessageDefinition:missing-module-docstring (C0114)]",
+        "list:[MessageDefinition:unused-import (W0611)]"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/utils/utils.py::tokenize_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,..."
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "pylint/lint/expand_modules.py::_is_ignored_file",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": [
+        "bool:True"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/expand_modules.py::_is_in_ignore_list_re",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": true,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir",
+        "tests/test_self.py::TestRunTC::test_recursive_current_dir",
+        "tests/test_self.py::TestRunTC::test_regression_parallel_mode_without_filepath"
+      ],
+      "before": [
+        "(element=str:'', ignore_list_re=tuple:(re.compile('^\\\\.#'),))",
+        "(element=str:'./ignored_subdirectory', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'./ignored_subdirectory/failing.py', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'./module.py', ignore_list_re=list:[])",
+        "(element=str:'./package', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'./subdirectory', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'./subdirectory/module.py', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'./subdirectory/subsubdirectory', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'./subdirectory/subsubdirectory/module.py', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'./subsubdirectory', ignore_list_re=list:[])",
+        "(element=str:'./subsubdirectory/module.py', ignore_list_re=list:[])",
+        "(element=str:'<root>/tests/regrtest_data/regression_missing_init_3564/subdirectory/', ignore_list_re=list:[])"
+      ],
+      "after": [
+        "(element=str:'<root>/tests/regrtest_data/regression_missing_init_3564/subdirectory', ignore_list_re=list:[])",
+        "(element=str:'ignored_subdirectory', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'ignored_subdirectory/failing.py', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'module.py', ignore_list_re=list:[])",
+        "(element=str:'package', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'subdirectory', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'subdirectory', ignore_list_re=tuple:(re.compile('^\\\\.#'),))",
+        "(element=str:'subdirectory/module.py', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'subdirectory/subsubdirectory', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'subdirectory/subsubdirectory/module.py', ignore_list_re=list:[re.compile('^ignored_subdire...*|^ignored_subdirectory/.*')])",
+        "(element=str:'subsubdirectory', ignore_list_re=list:[])",
+        "(element=str:'subsubdirectory/module.py', ignore_list_re=list:[])"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/basic_checker.py::BasicChecker.visit_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(_=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/docstring_checker.py::DocStringChecker._check_docstring",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node_type=str:'module', node=Module:<Module.failing l.0 at 0x?>, report_missing=bool:True, confidence=Confidence:Confidence(name='HIGH', desc...based on inference result.'))"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/docstring_checker.py::DocStringChecker.visit_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/docstring_checker.py::_infer_dunder_doc_attribute",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/name_checker/checker.py::NameChecker._check_name",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node_type=str:'module', name=str:'failing', node=Module:<Module.failing l.0 at 0x?>, confidence=Confidence:Confidence(name='HIGH', desc...based on inference result.'))"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/name_checker/checker.py::NameChecker._name_allowed_by_regex",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(name=str:'failing')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/name_checker/checker.py::NameChecker._name_disallowed_by_regex",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(name=str:'failing')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/name_checker/checker.py::NameChecker.leave_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(_=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/name_checker/checker.py::NameChecker.visit_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/base/name_checker/checker.py::_is_multi_naming_match",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(match=Match:<re.Match object; span=(0, 7), match='failing'>, node_type=str:'module', confidence=Confidence:Confidence(name='HIGH', desc...based on inference result.'))"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/design_analysis.py::MisdesignChecker.visit_default",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Import:<Import l.1 at 0x?>)",
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::FormatChecker.check_lines",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(lines=str:'', lineno=int:2)",
+        "(lines=str:'import re\\n', lineno=int:1)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::FormatChecker.new_line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=TokenWrapper:<TokenWrapper>, line_end=int:3, line_start=int:4)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::FormatChecker.process_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::FormatChecker.process_tokens",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::FormatChecker.specific_splitlines",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(lines=str:'import re\\n')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::FormatChecker.visit_default",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Import:<Import l.1 at 0x?>)",
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::TokenWrapper.__init__",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::TokenWrapper.line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(idx=int:4)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::TokenWrapper.start_line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(idx=int:4)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::TokenWrapper.type",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(idx=int:4)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/format.py::_last_token_on_line_is",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=TokenWrapper:<TokenWrapper>, line_end=int:3, token=str:';')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_imports_order",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(_module_node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/imports.py::ImportsChecker.leave_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/logging.py::LoggingChecker.visit_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(_=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/misc.py::EncodingChecker.process_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/misc.py::EncodingChecker.process_tokens",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/non_ascii_names.py::NonAsciiNameChecker._check_name",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node_type=str:'file', name=str:'failing', node=Module:<Module.failing l.0 at 0x?>)",
+        "(node_type=str:'module', name=str:'re', node=Import:<Import l.1 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/non_ascii_names.py::NonAsciiNameChecker.visit_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker.leave_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(_=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker.process_tokens",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/refactoring/refactoring_checker.py::_is_trailing_comma",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,..., index=int:0)",
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,..., index=int:1)",
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,..., index=int:2)",
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,..., index=int:3)",
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,..., index=int:4)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/similar.py::LineSet.__init__",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(name=str:'failing', lines=list:['import re\\n'], ignore_comments=bool:True, ignore_docstrings=bool:True, ignore_imports=bool:True, ignore_signatures=bool:True, line_enabled_callback=method:<_MessageStateHandler._is_one_message_enabled>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/similar.py::Similar.append_stream",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(streamid=str:'failing', stream=BufferedReader:<_io.BufferedReader name='<r...ed_subdirectory/failing.py'>, encoding=str:'utf-8')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/similar.py::SimilarChecker.process_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/similar.py::stripped_lines",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(lines=list:['import re\\n'], ignore_comments=bool:True, ignore_docstrings=bool:True, ignore_imports=bool:True, ignore_signatures=bool:True, line_enabled_callback=method:<_MessageStateHandler._is_one_message_enabled>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/spelling.py::SpellingChecker._check_docstring",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/spelling.py::SpellingChecker.process_tokens",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/spelling.py::SpellingChecker.visit_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/strings.py::StringConstantChecker.process_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/strings.py::StringConstantChecker.process_tokens",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._determine_codec",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(stream=BufferedReader:<_io.BufferedReader name='<r...ed_subdirectory/failing.py'>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker.process_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/utils.py::get_node_last_lineno",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Import:<Import l.1 at 0x?>)",
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/utils.py::is_postponed_evaluation_enabled",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/variables.py::NamesConsumer.__init__",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>, scope_type=str:'module')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/variables.py::VariablesChecker._check_globals",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(not_consumed=dict:{'re': [<Import l.1 at 0x?>]})"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/variables.py::VariablesChecker._check_imports",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(not_consumed=dict:{'re': [<Import l.1 at 0x?>]})"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/variables.py::VariablesChecker._check_metaclasses",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/variables.py::VariablesChecker.leave_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/variables.py::VariablesChecker.visit_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/checkers/variables.py::_fix_dot_imports",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(not_consumed=dict:{'re': [<Import l.1 at 0x?>]})"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/caching.py::_get_pdata_path",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(base_name=PosixPath:PosixPath('failing'), recurs=int:1, pylint_home=PosixPath:PosixPath('/root/.cache/pylint'))"
+      ],
+      "after": [
+        "(base_name=PosixPath:PosixPath('package'), recurs=int:1, pylint_home=PosixPath:PosixPath('/root/.cache/pylint'))"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/caching.py::load_results",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(base=str:'failing', pylint_home=str:'/root/.cache/pylint')"
+      ],
+      "after": [
+        "(base=str:'package', pylint_home=str:'/root/.cache/pylint')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler.process_tokens",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(tokens=list:[TokenInfo(type=62 (ENCODING)...(0, 0), end=(0, 0), line=''), TokenInfo(type=1 (NAME), str...=(1,...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/pylinter.py::PyLinter._check_astroid_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>, walker=ASTWalker:<ASTWalker>, rawcheckers=list:[Checker 'format' (responsibl..., 'C0325', 'C0327', 'C0328'), Checker 'miscellaneous' (responsibl..., tokencheckers=list:[Checker 'format' (responsibl..., 'C0325', 'C0327', 'C0328'), Checker 'miscellaneous' (responsibl...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/pylinter.py::PyLinter._check_file",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(get_ast=method:<PyLinter.get_ast>, check_astroid_module=partial:functools.partial(<bound met...'E2513', 'E2514', 'E2515')]), file=FileItem:FileItem(name='failing', fil...ling.py', modpath='failing'))"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/pylinter.py::PyLinter._get_namespace_for_file",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(filepath=PosixPath:PosixPath('ignored_subdirectory/failing.py'), namespaces=dict:{PosixPath('<root>/tests/regrtest_data/directory'): (Namespace(rcfile=None, outpu...eck_quote_con...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/pylinter.py::PyLinter.check_astroid_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(ast_node=Module:<Module.failing l.0 at 0x?>, walker=ASTWalker:<ASTWalker>, rawcheckers=list:[Checker 'format' (responsibl..., 'C0325', 'C0327', 'C0328'), Checker 'miscellaneous' (responsibl..., tokencheckers=list:[Checker 'format' (responsibl..., 'C0325', 'C0327', 'C0328'), Checker 'miscellaneous' (responsibl...)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/pylinter.py::PyLinter.get_ast",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(filepath=str:'ignored_subdirectory/failing.py', modname=str:'failing', data=NoneType:None)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/pylinter.py::PyLinter.set_current_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(modname=str:'failing', filepath=str:'ignored_subdirectory/failing.py')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/lint/pylinter.py::PyLinter.should_analyze_file",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(modname=str:'failing', path=str:'ignored_subdirectory/failing.py', is_argument=bool:True)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/message/message_definition_store.py::MessageDefinitionStore.get_message_definitions",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(msgid_or_symbol=str:'missing-module-docstring')",
+        "(msgid_or_symbol=str:'unused-import')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/reporters/base_reporter.py::BaseReporter.on_close",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(stats=LinterStats:{'argument': 0, 'attr': 0, '...e': 1} 1 0 0 0 0 1 1 0 0 0.0, previous_stats=NoneType:None)"
+      ],
+      "after": [
+        "(stats=LinterStats:{'argument': 0, 'attr': 0, '...e': 0} 0 0 0 0 0 0 0 0 0 0.0, previous_stats=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/reporters/text.py::TextReporter.on_set_current_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(module=str:'failing', filepath=str:'ignored_subdirectory/failing.py')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/utils/ast_walker.py::ASTWalker.walk",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(astroid=Import:<Import l.1 at 0x?>)",
+        "(astroid=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/utils/file_state.py::FileState.__init__",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(modname=str:'failing', msg_store=MessageDefinitionStore:<MessageDefinitionStore>, node=Module:<Module.failing l.0 at 0x?>, is_base_filestate=bool:False)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/utils/linterstats.py::LinterStats.init_single_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(module_name=str:'failing')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/utils/utils.py::decoding_stream",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(stream=BufferedReader:<_io.BufferedReader name='<r...ed_subdirectory/failing.py'>, encoding=str:'utf-8', errors=str:'strict')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "pylint/utils/utils.py::tokenize_module",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "(node=Module:<Module.failing l.0 at 0x?>)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/base_checker.py::BaseChecker.add_message",
+      "detail": "no longer called from DocStringChecker._check_docstring",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/base_checker.py::BaseChecker.add_message",
+      "detail": "no longer called from VariablesChecker._check_imports",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.check_deprecated_module",
+      "detail": "no longer called from DeprecatedMixin.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.check_deprecated_module",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.deprecated_modules",
+      "detail": "no longer called from DeprecatedMixin.check_deprecated_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.visit_import",
+      "detail": "no longer called from ASTWalker.walk",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.visit_import",
+      "detail": "no longer called from DeprecatedMixin.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/design_analysis.py::MisdesignChecker._inc_all_stmts",
+      "detail": "no longer called from MisdesignChecker.visit_default",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/format.py::FormatChecker._check_line_ending",
+      "detail": "no longer called from FormatChecker.process_tokens",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/format.py::FormatChecker.check_indent_level",
+      "detail": "no longer called from FormatChecker.process_tokens",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/format.py::FormatChecker.check_line_ending",
+      "detail": "no longer called from FormatChecker.check_lines",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/format.py::TokenWrapper.token",
+      "detail": "no longer called from _last_token_on_line_is",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._add_imported_module",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_import_as_rename",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_position",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_preferred_module",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_reimport",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_toplevel",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._get_imported_module",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._is_fallback_import",
+      "detail": "no longer called from ImportsChecker._check_imports_order",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._is_fallback_import",
+      "detail": "no longer called from ImportsChecker._is_fallback_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker._record_import",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker.deprecated_modules",
+      "detail": "no longer called from DeprecatedMixin.check_deprecated_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker.visit_import",
+      "detail": "no longer called from ASTWalker.walk",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::ImportsChecker.visit_import",
+      "detail": "no longer called from ImportsChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/imports.py::_get_first_import",
+      "detail": "no longer called from ImportsChecker._check_reimport",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/logging.py::LoggingChecker.visit_import",
+      "detail": "no longer called from ASTWalker.walk",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/misc.py::EncodingChecker._check_encoding",
+      "detail": "no longer called from EncodingChecker.process_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/non_ascii_names.py::NonAsciiNameChecker._check_module_import",
+      "detail": "no longer called from NonAsciiNameChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/non_ascii_names.py::NonAsciiNameChecker._check_name",
+      "detail": "no longer called from NonAsciiNameChecker._check_module_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/non_ascii_names.py::NonAsciiNameChecker.visit_import",
+      "detail": "no longer called from ASTWalker.walk",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/similar.py::stripped_lines",
+      "detail": "no longer called from stripped_lines",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._check_bidi_chars",
+      "detail": "no longer called from UnicodeChecker.process_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._check_invalid_chars",
+      "detail": "no longer called from UnicodeChecker.process_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._find_line_matches",
+      "detail": "no longer called from UnicodeChecker._check_invalid_chars",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._is_unicode",
+      "detail": "no longer called from UnicodeChecker._check_bidi_chars",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/unicode.py::_map_positions_to_result",
+      "detail": "no longer called from UnicodeChecker._find_line_matches",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/unicode.py::_remove_bom",
+      "detail": "no longer called from UnicodeChecker.process_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/utils.py::find_try_except_wrapper_node",
+      "detail": "no longer called from is_from_fallback_block",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/utils.py::get_node_last_lineno",
+      "detail": "no longer called from get_node_last_lineno",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/utils.py::in_type_checking_block",
+      "detail": "no longer called from VariablesChecker._check_imports",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/utils.py::is_builtin",
+      "detail": "no longer called from VariablesChecker.visit_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/utils.py::is_from_fallback_block",
+      "detail": "no longer called from VariablesChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/utils.py::is_node_in_guarded_import_block",
+      "detail": "no longer called from VariablesChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/variables.py::VariablesChecker._analyse_fallback_blocks",
+      "detail": "no longer called from VariablesChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/variables.py::VariablesChecker._check_module_attrs",
+      "detail": "no longer called from VariablesChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/variables.py::VariablesChecker.visit_import",
+      "detail": "no longer called from ASTWalker.walk",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/variables.py::_fix_dot_imports",
+      "detail": "no longer called from _fix_dot_imports",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/checkers/variables.py::_infer_name_module",
+      "detail": "no longer called from VariablesChecker.visit_import",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/config/arguments_manager.py::_ArgumentsManager.config",
+      "detail": "no longer called from DocStringChecker._check_docstring",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/config/arguments_manager.py::_ArgumentsManager.config",
+      "detail": "no longer called from FormatChecker._check_line_ending",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/config/arguments_manager.py::_ArgumentsManager.config",
+      "detail": "no longer called from FormatChecker.check_indent_level",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/config/arguments_manager.py::_ArgumentsManager.config",
+      "detail": "no longer called from ImportsChecker.deprecated_modules",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/config/arguments_manager.py::_ArgumentsManager.config",
+      "detail": "no longer called from PyLinter._report_evaluation",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/config/arguments_manager.py::_ArgumentsManager.config",
+      "detail": "no longer called from VariablesChecker._analyse_fallback_blocks",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/config/arguments_manager.py::_ArgumentsManager.config",
+      "detail": "no longer called from _MessageStateHandler.is_message_enabled",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler._is_one_message_enabled",
+      "detail": "no longer called from stripped_lines",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler.is_message_enabled",
+      "detail": "no longer called from ImportsChecker._check_imports_order",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler.is_message_enabled",
+      "detail": "no longer called from ImportsChecker._check_reimport",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler.is_message_enabled",
+      "detail": "no longer called from ImportsChecker.leave_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler.is_message_enabled",
+      "detail": "no longer called from PyLinter._add_one_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/lint/pylinter.py::PyLinter._add_one_message",
+      "detail": "no longer called from PyLinter.add_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/lint/pylinter.py::PyLinter.add_message",
+      "detail": "no longer called from BaseChecker.add_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/message/message.py::Message.__init__",
+      "detail": "no longer called from PyLinter._add_one_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/message/message_definition.py::MessageDefinition.check_message_definition",
+      "detail": "no longer called from PyLinter._add_one_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/message/message_definition_store.py::MessageDefinitionStore.get_message_definitions",
+      "detail": "no longer called from PyLinter.add_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/base_reporter.py::BaseReporter.display_reports",
+      "detail": "no longer called from PyLinter._report_evaluation",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/base_reporter.py::BaseReporter.writeln",
+      "detail": "no longer called from TextReporter.handle_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/base_reporter.py::BaseReporter.writeln",
+      "detail": "no longer called from TextReporter.write_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/text.py::TextReporter._display",
+      "detail": "no longer called from BaseReporter.display_reports",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/text.py::TextReporter.handle_message",
+      "detail": "no longer called from PyLinter._add_one_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/text.py::TextReporter.write_message",
+      "detail": "no longer called from TextReporter.handle_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.begin_format",
+      "detail": "no longer called from BaseWriter.format",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.end_format",
+      "detail": "no longer called from BaseWriter.format",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.format",
+      "detail": "no longer called from TextReporter._display",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.format_children",
+      "detail": "no longer called from TextWriter.visit_evaluationsection",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.format_children",
+      "detail": "no longer called from TextWriter.visit_paragraph",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.write",
+      "detail": "no longer called from BaseWriter.writeln",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.write",
+      "detail": "no longer called from TextWriter.visit_text",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.writeln",
+      "detail": "no longer called from TextWriter.visit_evaluationsection",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.writeln",
+      "detail": "no longer called from TextWriter.visit_paragraph",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::BaseLayout.__init__",
+      "detail": "no longer called from EvaluationSection.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::BaseLayout.append",
+      "detail": "no longer called from EvaluationSection.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::BaseLayout.parents",
+      "detail": "no longer called from BaseLayout.append",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::EvaluationSection.__init__",
+      "detail": "no longer called from PyLinter._report_evaluation",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::Section.__init__",
+      "detail": "no longer called from EvaluationSection.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::Text.__init__",
+      "detail": "no longer called from EvaluationSection.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::VNode.__init__",
+      "detail": "no longer called from Text.__init__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::VNode.accept",
+      "detail": "no longer called from BaseWriter.format",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/nodes.py::VNode.accept",
+      "detail": "no longer called from BaseWriter.format_children",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.__init__",
+      "detail": "no longer called from TextReporter._display",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.visit_evaluationsection",
+      "detail": "no longer called from VNode.accept",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.visit_paragraph",
+      "detail": "no longer called from VNode.accept",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.visit_text",
+      "detail": "no longer called from VNode.accept",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/utils/ast_walker.py::ASTWalker.walk",
+      "detail": "no longer called from ASTWalker.walk",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/utils/file_state.py::FileState.get_effective_max_line_number",
+      "detail": "no longer called from _MessageStateHandler._is_one_message_enabled",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/utils/linterstats.py::LinterStats.increase_single_message_count",
+      "detail": "no longer called from PyLinter._add_one_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/utils/linterstats.py::LinterStats.increase_single_module_message_count",
+      "detail": "no longer called from PyLinter._add_one_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/utils/utils.py::IsortDriver.place_module",
+      "detail": "no longer called from ImportsChecker._check_imports_order",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "pylint/utils/utils.py::get_module_and_frameid",
+      "detail": "no longer called from PyLinter._add_one_message",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/expand_modules.py::_is_ignored_file",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "tests/test_self.py::TestCallbackOptions::test_enable_all_extensions",
+        "tests/test_self.py::TestCallbackOptions::test_errors_only_functions_as_disable",
+        "tests/test_self.py::TestRunTC::test_all",
+        "tests/test_self.py::TestRunTC::test_allow_import_of_files_found_in_modules_during_parallel_check",
+        "tests/test_self.py::TestRunTC::test_bom_marker",
+        "tests/test_self.py::TestRunTC::test_confidence_levels",
+        "tests/test_self.py::TestRunTC::test_enable_all_works",
+        "tests/test_self.py::TestRunTC::test_error_mode_shows_no_score",
+        "tests/test_self.py::TestRunTC::test_evaluation_score_shown_by_default",
+        "tests/test_self.py::TestRunTC::test_exit_zero",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-C-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-C0115-fail_under_plus7_5.py-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-C0116-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-broad-except-fail_under_minus10.py-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-broad-except-fail_under_plus7_5.py-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-fake1,C,fake2-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-missing-function-docstring-fail_under_minus10.py-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-10-missing-function-docstring-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-11-broad-except-fail_under_minus10.py-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-11-missing-function-docstring-fail_under_minus10.py-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-5-broad-except-fail_under_minus10.py-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-5-missing-function-docstring-fail_under_minus10.py-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-9-broad-except-fail_under_minus10.py-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on[-9-missing-function-docstring-fail_under_minus10.py-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on[6-broad-except-fail_under_plus7_5.py-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on[6-missing-function-docstring-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on[7.5-broad-except-fail_under_plus7_5.py-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on[7.5-missing-function-docstring-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on[7.6-broad-except-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on[7.6-missing-function-docstring-fail_under_plus7_5.py-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on_edge_case[opts0-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_edge_case[opts1-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_edge_case[opts2-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on_edge_case[opts3-16]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args0-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args1-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args2-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args3-6]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args4-6]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args5-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args6-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args7-6]",
+        "tests/test_self.py::TestRunTC::test_fail_on_exit_code[args8-22]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args0-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args1-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args2-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args3-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args4-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args5-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args6-0]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args7-1]",
+        "tests/test_self.py::TestRunTC::test_fail_on_info_only_exit_code[args8-1]",
+        "tests/test_self.py::TestRunTC::test_fail_under",
+        "tests/test_self.py::TestRunTC::test_getdefaultencoding_crashes_with_lc_ctype_utf8",
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive",
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir",
+        "tests/test_self.py::TestRunTC::test_ignore_pattern_recursive",
+        "tests/test_self.py::TestRunTC::test_ignore_recursive",
+        "tests/test_self.py::TestRunTC::test_import_itself_not_accounted_for_relative_imports",
+        "tests/test_self.py::TestRunTC::test_information_category_disabled_by_default",
+        "tests/test_self.py::TestRunTC::test_jobs_score",
+        "tests/test_self.py::TestRunTC::test_json_report_does_not_escape_quotes",
+        "tests/test_self.py::TestRunTC::test_json_report_when_file_has_syntax_error",
+        "tests/test_self.py::TestRunTC::test_json_report_when_file_is_missing",
+        "tests/test_self.py::TestRunTC::test_max_inferred_for_complicated_class_hierarchy",
+        "tests/test_self.py::TestRunTC::test_no_ext_file",
+        "tests/test_self.py::TestRunTC::test_no_out_encoding",
+        "tests/test_self.py::TestRunTC::test_one_module_fatal_error",
+        "tests/test_self.py::TestRunTC::test_output_file_can_be_combined_with_custom_reporter",
+        "tests/test_self.py::TestRunTC::test_output_file_can_be_combined_with_output_format_option[colorized-tests/regrtest_data/unused_variable.py:4:4: W0612: \\x1b[35mUnused variable 'variable'\\x1b[0m (\\x1b[35munused-variable\\x1b[0m)]",
+        "tests/test_self.py::TestRunTC::test_output_file_can_be_combined_with_output_format_option[json-\"message\": \"Unused variable 'variable'\",]",
+        "tests/test_self.py::TestRunTC::test_output_file_can_be_combined_with_output_format_option[msvs-tests/regrtest_data/unused_variable.py(4): [W0612(unused-variable)test] Unused variable 'variable']",
+        "tests/test_self.py::TestRunTC::test_output_file_can_be_combined_with_output_format_option[parseable-tests/regrtest_data/unused_variable.py:4: [W0612(unused-variable), test] Unused variable 'variable']",
+        "tests/test_self.py::TestRunTC::test_output_file_can_be_combined_with_output_format_option[text-tests/regrtest_data/unused_variable.py:4:4: W0612: Unused variable 'variable' (unused-variable)]",
+        "tests/test_self.py::TestRunTC::test_output_file_specified_in_rcfile",
+        "tests/test_self.py::TestRunTC::test_output_file_valid_path",
+        "tests/test_self.py::TestRunTC::test_parallel_execution",
+        "tests/test_self.py::TestRunTC::test_parallel_execution_missing_arguments",
+        "tests/test_self.py::TestRunTC::test_parseable_file_path",
+        "tests/test_self.py::TestRunTC::test_pkginfo",
+        "tests/test_self.py::TestRunTC::test_pylintrc_comments_in_values",
+        "tests/test_self.py::TestRunTC::test_recursive",
+        "tests/test_self.py::TestRunTC::test_recursive_current_dir",
+        "tests/test_self.py::TestRunTC::test_regex_paths_csv_validator",
+        "tests/test_self.py::TestRunTC::test_regression_parallel_mode_without_filepath",
+        "tests/test_self.py::TestRunTC::test_regression_recursive",
+        "tests/test_self.py::TestRunTC::test_regression_recursive_current_dir",
+        "tests/test_self.py::TestRunTC::test_relative_imports[True]",
+        "tests/test_self.py::TestRunTC::test_w0704_ignored",
+        "tests/test_self.py::TestRunTC::test_wrong_import_position_when_others_disabled"
+      ],
+      "before": [
+        "entry->L56"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/base/docstring_checker.py::DocStringChecker._check_docstring",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L174->L178",
+        "L178->L180",
+        "L180->L182",
+        "L182->L185",
+        "L185->L187",
+        "L186->L188",
+        "L186->L199",
+        "L187->L186",
+        "L188->L186",
+        "L199->L200",
+        "L200->L205",
+        "L205->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/base_checker.py::BaseChecker.add_message",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L164->L165",
+        "L164->exit",
+        "L165->L164",
+        "entry->L164"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.check_deprecated_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L194->L195",
+        "L194->exit",
+        "L195->L194",
+        "entry->L194"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.deprecated_modules",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L178->exit",
+        "entry->L178"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/deprecated.py::DeprecatedMixin.visit_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L97",
+        "L97->L98",
+        "L97->exit",
+        "L98->L99",
+        "L99->L97",
+        "entry->L97"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/design_analysis.py::MisdesignChecker._inc_all_stmts",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L418->exit",
+        "entry->L418"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/design_analysis.py::MisdesignChecker.visit_default",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L591->L592",
+        "L592->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::FormatChecker._check_line_ending",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L471->L478",
+        "L478->L481",
+        "L481->L482",
+        "L482->exit",
+        "entry->L471"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::FormatChecker.check_indent_level",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L698->L699",
+        "L699->L701",
+        "L701->L702",
+        "L702->L703",
+        "L703->L706",
+        "L706->L707",
+        "L707->L710",
+        "L710->exit",
+        "entry->L698"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::FormatChecker.check_line_ending",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L577->L581",
+        "L581->L582",
+        "L582->exit",
+        "entry->L577"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::FormatChecker.check_lines",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L665->L666",
+        "L666->L665",
+        "L670->L674",
+        "L674->L670"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::FormatChecker.process_tokens",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L406->L412",
+        "L412->L413",
+        "L413->L440",
+        "L436->L437",
+        "L437->L438",
+        "L438->L440"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::FormatChecker.specific_splitlines",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L637->L638",
+        "L638->L639",
+        "L639->L640",
+        "L640->L637"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::FormatChecker.visit_default",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L496->L498",
+        "L498->L500",
+        "L500->L501",
+        "L501->L508",
+        "L507->L511",
+        "L508->L507",
+        "L511->L512",
+        "L512->L515",
+        "L515->L516",
+        "L516->L517",
+        "L517->L520",
+        "L520->L522",
+        "L522->L523",
+        "L523->L524",
+        "L524->L525",
+        "L525->L526",
+        "L526->L527",
+        "L527->L528",
+        "L528->L529",
+        "L528->exit",
+        "L529->L530",
+        "L530->L531",
+        "L531->L528"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::TokenWrapper.token",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L134->exit",
+        "entry->L134"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/format.py::_last_token_on_line_is",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L119->L120",
+        "L120->L119",
+        "L121->L122",
+        "L122->L121"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._add_imported_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L794->L795",
+        "L795->L796",
+        "L796->L798",
+        "L798->L799",
+        "L799->L800",
+        "L799->L805",
+        "L800->L799",
+        "L805->L809",
+        "L809->L812",
+        "L812->exit",
+        "entry->L794"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_import_as_rename",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L843->L844",
+        "L844->L845",
+        "L845->L846",
+        "L846->exit",
+        "entry->L843"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_imports_order",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L682->L683",
+        "L683->L686",
+        "L686->L687",
+        "L687->L688",
+        "L688->L689",
+        "L688->L691",
+        "L689->L688",
+        "L691->L692",
+        "L692->L693",
+        "L693->L694",
+        "L694->L696",
+        "L695->L700",
+        "L696->L697",
+        "L696->L698",
+        "L697->L696",
+        "L698->L695",
+        "L700->L702",
+        "L702->L682"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_position",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L629->exit",
+        "entry->L629"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_preferred_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L835->exit",
+        "entry->L835"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_reimport",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L865->L868",
+        "L868->L869",
+        "L869->L870",
+        "L870->L871",
+        "L871->L874",
+        "L874->L875",
+        "L874->exit",
+        "L875->L874",
+        "L875->L876",
+        "L876->L877",
+        "L876->L879",
+        "L877->L876",
+        "L879->L875",
+        "entry->L865"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._check_toplevel",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L957->L958",
+        "L958->exit",
+        "entry->L957"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._get_imported_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L763->L764",
+        "L764->exit",
+        "entry->L763"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._is_fallback_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L664->L665",
+        "L664->exit",
+        "L665->exit",
+        "entry->L664",
+        "entry->L665"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker._record_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L643->L646",
+        "L646->L647",
+        "L647->L650",
+        "L650->L660",
+        "L660->exit",
+        "entry->L643"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker.deprecated_modules",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L451->L453",
+        "L453->L454",
+        "L453->L456",
+        "L454->L453",
+        "L454->L455",
+        "L455->L453",
+        "L456->exit",
+        "entry->L451"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker.leave_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L519->L520",
+        "L520->L521",
+        "L521->L523",
+        "L522->L529",
+        "L523->L522",
+        "L529->L530",
+        "L530->L531",
+        "L530->L534",
+        "L531->L530",
+        "L534->L519"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::ImportsChecker.visit_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L460->L461",
+        "L461->L462",
+        "L462->L464",
+        "L464",
+        "L464->L465",
+        "L464->exit",
+        "L465->L468",
+        "L468->L469",
+        "L468->exit",
+        "L469->L470",
+        "L470->L471",
+        "L471->L472",
+        "L472->L474",
+        "L474->L475",
+        "L475->L476",
+        "L476->L478",
+        "L478->L481",
+        "L481->L468",
+        "entry->L460",
+        "entry->L464"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/imports.py::_get_first_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L114->L116",
+        "L116->exit",
+        "L86->L88",
+        "L88->L89",
+        "L89->L90",
+        "L90->L114",
+        "L90->L91",
+        "L91->L92",
+        "L92->L90",
+        "entry->L86"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/logging.py::LoggingChecker.visit_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L181->L182",
+        "L181->exit",
+        "L182->L181",
+        "entry->L181"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/misc.py::EncodingChecker._check_encoding",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L111->L112",
+        "L112->exit",
+        "entry->L111"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/misc.py::EncodingChecker.process_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L130->L131",
+        "L131->L130"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/non_ascii_names.py::NonAsciiNameChecker._check_module_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L163->L164",
+        "L163->exit",
+        "L164->L165",
+        "L165->L163",
+        "entry->L163"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/non_ascii_names.py::NonAsciiNameChecker.visit_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L169->exit",
+        "entry->L169"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/similar.py::stripped_lines",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L584->L583",
+        "L584->exit",
+        "L585->L584",
+        "L588",
+        "L588->L587",
+        "L588->exit",
+        "L589->L588",
+        "L590->exit",
+        "L630->L631",
+        "L631->L632",
+        "L631->L635",
+        "L632->L631",
+        "L635->L636",
+        "L636->L637",
+        "L637->L638",
+        "L638->L641",
+        "L641->L644",
+        "L644->L648",
+        "L648->L649",
+        "L649->L650",
+        "L649->L652",
+        "L650->L649",
+        "L652->L653",
+        "L653->L654",
+        "L654->L655",
+        "L655->L656",
+        "L656->L658",
+        "L658->L630",
+        "entry->L588",
+        "entry->L590"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/similar.py::stripped_lines._get_functions",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L603->L604",
+        "L604->L607",
+        "L607->L603",
+        "L607->L608",
+        "L608->L609",
+        "L609->L607"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._check_bidi_chars",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L494->L496",
+        "L496->L497",
+        "L496->exit",
+        "L497->L496",
+        "entry->L494"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._check_invalid_chars",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L479->L480",
+        "L480->exit",
+        "entry->L479"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._find_line_matches",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L396->L397",
+        "L397->L398",
+        "L398->L399",
+        "L399->exit",
+        "entry->L396"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker._is_unicode",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L381->exit",
+        "entry->L381"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/unicode.py::UnicodeChecker.process_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L527->L530",
+        "L530->L531",
+        "L531->L532",
+        "L532->L533",
+        "L533->L527"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/unicode.py::_map_positions_to_result",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L169->L171",
+        "L171->L172",
+        "L171->L191",
+        "L172->L173",
+        "L173->L171",
+        "L191->exit",
+        "entry->L169"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/unicode.py::_remove_bom",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L221->L223",
+        "L223->L224",
+        "L224->L226",
+        "L226->exit",
+        "entry->L221"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/utils.py::find_try_except_wrapper_node",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L986->L987",
+        "L987->L988",
+        "L988->L989",
+        "L988->L991",
+        "L989->L988",
+        "L991->L993",
+        "L993->exit",
+        "entry->L986"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/utils.py::get_node_last_lineno",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1432->L1433",
+        "L1433->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/utils.py::in_type_checking_block",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1811->L1812",
+        "L1811->L1836",
+        "L1812->L1813",
+        "L1813->L1811",
+        "L1836->exit",
+        "entry->L1811"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/utils.py::is_builtin",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L283->exit",
+        "entry->L283"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/utils.py::is_from_fallback_block",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1014->L1015",
+        "L1015->L1016",
+        "L1016->exit",
+        "entry->L1014"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/utils.py::is_node_in_guarded_import_block",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1721",
+        "L1721->exit",
+        "entry->L1721"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::VariablesChecker._analyse_fallback_blocks",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1754->exit",
+        "entry->L1754"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::VariablesChecker._check_imports",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L2698->L2699",
+        "L2699->L2698",
+        "L2699->L2700",
+        "L2700->L2701",
+        "L2701->L2703",
+        "L2703->L2704",
+        "L2704->L2706",
+        "L2706->L2708",
+        "L2708->L2711",
+        "L2710->L2714",
+        "L2711->L2712",
+        "L2712->L2710",
+        "L2714->L2717",
+        "L2717->L2724",
+        "L2724->L2728",
+        "L2728->L2730",
+        "L2730->L2731",
+        "L2731->L2734",
+        "L2734->L2735",
+        "L2735->L2699"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::VariablesChecker._check_metaclasses",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L2778->L2779",
+        "L2779->L2778"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::VariablesChecker._check_module_attrs",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L2606->L2624",
+        "L2624->L2630",
+        "L2630->L2631",
+        "L2631->exit",
+        "entry->L2606"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::VariablesChecker.visit_import",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1668->L1672",
+        "L1672->L1677",
+        "L1677->L1678",
+        "L1677->exit",
+        "L1678->L1679",
+        "L1679->L1680",
+        "L1680->L1683",
+        "L1683->L1685",
+        "L1685->L1677",
+        "entry->L1668"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::VariablesChecker.visit_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1101->L1102",
+        "L1102->L1101"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::_fix_dot_imports",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L264->L265",
+        "L265->L268",
+        "L265->L271",
+        "L265->exit",
+        "L266->L265",
+        "L266->exit",
+        "L268->L265",
+        "L268->L266",
+        "L271->L264",
+        "L271->L272",
+        "L272->L274",
+        "L274->L271",
+        "L274->L275",
+        "L275->L276",
+        "L276->L277",
+        "L277->L282",
+        "L282->L284",
+        "L283->L285",
+        "L283->L289",
+        "L284->L283",
+        "L285->L283",
+        "L289->L293",
+        "L293->L294",
+        "L294->L295",
+        "L295->L274",
+        "L296->exit",
+        "entry->L265",
+        "entry->L296"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/checkers/variables.py::_infer_name_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L250->L251",
+        "L251->L252",
+        "L252->exit",
+        "entry->L250"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/expand_modules.py::expand_modules",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": [
+        "L79->L82",
+        "L82->L77"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler._is_one_message_enabled",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L280->L282",
+        "L282->L283",
+        "L283->L284",
+        "L284->L289",
+        "L289->L290",
+        "L290->L308",
+        "L308->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/message_state_handler.py::_MessageStateHandler.process_tokens",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L351->L352",
+        "L352->L353",
+        "L353->L355",
+        "L356->L357",
+        "L357->L359"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/pylinter.py::PyLinter._add_one_message",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1101->L1104",
+        "L1104->L1105",
+        "L1105->L1115",
+        "L1115->L1116",
+        "L1116->L1117",
+        "L1117->L1118",
+        "L1118->L1119",
+        "L1119->L1120",
+        "L1120->L1121",
+        "L1121->L1122",
+        "L1122->L1125",
+        "L1125->L1136",
+        "L1136->L1137",
+        "L1137->L1138",
+        "L1138->L1139",
+        "L1139->L1140",
+        "L1139->L1144",
+        "L1140->L1141",
+        "L1141->L1142",
+        "L1142->L1139",
+        "L1144->L1145",
+        "L1145->L1146",
+        "L1146->L1147",
+        "L1147->L1149",
+        "L1149->L1150",
+        "L1150->L1151",
+        "L1150->L1153",
+        "L1151->L1153",
+        "L1153->L1157",
+        "L1157->L1158",
+        "L1158->L1159",
+        "L1159->L1160",
+        "L1160->L1164",
+        "L1164->L1165",
+        "L1164->exit",
+        "L1165->L1164",
+        "L1165->L1166",
+        "L1166->L1167",
+        "L1167->L1168",
+        "L1168->L1169",
+        "L1168->L1178",
+        "L1169->L1170",
+        "L1170->L1171",
+        "L1171->L1172",
+        "L1172->L1173",
+        "L1173->L1174",
+        "L1174->L1175",
+        "L1175->L1176",
+        "L1176->L1168",
+        "L1178->L1179",
+        "L1179->L1165",
+        "entry->L1101"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/pylinter.py::PyLinter._report_evaluation",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": [
+        "L1056->L1057",
+        "L1057->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/pylinter.py::PyLinter._report_evaluation",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1056->L1060",
+        "L1060->L1061",
+        "L1061->L1063",
+        "L1062->L1071",
+        "L1063->L1064",
+        "L1064->L1065",
+        "L1065->L1066",
+        "L1066->L1067",
+        "L1067->L1068",
+        "L1068->L1069",
+        "L1069->L1062",
+        "L1071->L1075",
+        "L1075->L1076",
+        "L1076->L1077",
+        "L1077->L1082",
+        "L1082->L1083",
+        "L1083->L1084",
+        "L1084->L1085",
+        "L1085->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/pylinter.py::PyLinter.add_message",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L1202->L1203",
+        "L1202->L1204",
+        "L1203->L1204",
+        "L1204->L1205",
+        "L1205->L1206",
+        "L1205->exit",
+        "L1206->L1205",
+        "L1206->L1207",
+        "L1207->L1208",
+        "L1208->L1209",
+        "L1209->L1210",
+        "L1210->L1211",
+        "L1211->L1212",
+        "L1212->L1213",
+        "L1213->L1214",
+        "L1214->L1206",
+        "entry->L1202"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/pylinter.py::PyLinter.any_fail_on_issues",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L500"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/run.py::Run.__init__",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [],
+      "after": [
+        "L224->L232",
+        "L232->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/lint/run.py::Run.__init__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L224->L225",
+        "L225->L230",
+        "L230->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/message/message.py::Message.__init__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L42->L58",
+        "L58->L59",
+        "L59->L60",
+        "L60->L61",
+        "L61->L62",
+        "L62->L63",
+        "L63->L64",
+        "L64->L65",
+        "L65->L66",
+        "L66->L67",
+        "L67->L68",
+        "L68->L69",
+        "L69->L70",
+        "L70->L71",
+        "L71->exit",
+        "entry->L42"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/message/message_definition.py::MessageDefinition.check_message_definition",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L111->L114",
+        "L114->L124",
+        "L124->L126",
+        "L126->exit",
+        "entry->L111"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/base_reporter.py::BaseReporter.display_reports",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L66->L67",
+        "L67->L72",
+        "L72->exit",
+        "entry->L66"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/base_reporter.py::BaseReporter.writeln",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L62->exit",
+        "entry->L62"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/text.py::TextReporter._display",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L210->L211",
+        "L211->exit",
+        "entry->L210"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/text.py::TextReporter.handle_message",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L200->L201",
+        "L200->L206",
+        "L201->L202",
+        "L202->L203",
+        "L203->L206",
+        "L206->exit",
+        "entry->L200"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/text.py::TextReporter.write_message",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L192->L193",
+        "L193->L194",
+        "L193->L196",
+        "L194->L193",
+        "L196->exit",
+        "entry->L192"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.begin_format",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L68->exit",
+        "entry->L68"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.end_format",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L71->exit",
+        "entry->L71"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.format",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L43->L44",
+        "L44->L45",
+        "L45->L46",
+        "L46->L47",
+        "L47->L48",
+        "L48->L49",
+        "L49->exit",
+        "entry->L43"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.format_children",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L55->L56",
+        "L55->exit",
+        "L56->L55",
+        "entry->L55"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.write",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L64->exit",
+        "entry->L64"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/base_writer.py::BaseWriter.writeln",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L60->exit",
+        "entry->L60"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/nodes.py::BaseLayout.append",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L61->L62",
+        "L62->L63",
+        "L63->exit",
+        "entry->L61"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/nodes.py::BaseLayout.parents",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L72->L73",
+        "L73->L74",
+        "L74->exit",
+        "entry->L72"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/nodes.py::EvaluationSection.__init__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L137->L138",
+        "L138->L139",
+        "L139->L140",
+        "L140->L141",
+        "L141->L142",
+        "L142->L143",
+        "L143->exit",
+        "entry->L137"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/nodes.py::Text.__init__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L93->L94",
+        "L94->L95",
+        "L95->exit",
+        "entry->L93"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/nodes.py::VNode.accept",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L32->L33",
+        "L32->L35",
+        "L33->L32",
+        "L35->exit",
+        "entry->L32"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.__init__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L34->L35",
+        "L35->exit",
+        "entry->L34"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.visit_evaluationsection",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L47->L48",
+        "L48->L49",
+        "L49->L50",
+        "L50->exit",
+        "entry->L47"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.visit_paragraph",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L62->L63",
+        "L63->exit",
+        "entry->L62"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/reporters/ureports/text_writer.py::TextWriter.visit_text",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L108->exit",
+        "entry->L108"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/utils/ast_walker.py::ASTWalker.walk",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L86->L87",
+        "L87->L89",
+        "L92->L93",
+        "L93->L92"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/utils/file_state.py::FileState.get_effective_max_line_number",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L275->exit",
+        "entry->L275"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/utils/linterstats.py::LinterStats.increase_single_message_count",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L301->exit",
+        "entry->L301"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/utils/linterstats.py::LinterStats.increase_single_module_message_count",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L309->exit",
+        "entry->L309"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/utils/utils.py::IsortDriver.place_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L433->L434",
+        "L434->exit",
+        "entry->L433"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "pylint/utils/utils.py::get_module_and_frameid",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_self.py::TestRunTC::test_ignore_path_recursive_current_dir"
+      ],
+      "before": [
+        "L119->L120",
+        "L120->L121",
+        "L121->L122",
+        "L122->L123",
+        "L123->L126",
+        "L126->L127",
+        "L127->L128",
+        "L128->L129",
+        "L129->L130",
+        "L130->L131",
+        "L131->exit",
+        "entry->L119"
+      ],
+      "after": []
+    }
+  ]
+}

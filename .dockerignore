@@ -1,0 +1,6 @@
+.venv
+eval/runs
+**/__pycache__
+.git
+eval
+docs

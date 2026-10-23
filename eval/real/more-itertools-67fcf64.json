@@ -1,0 +1,77 @@
+{
+  "base": "67fcf64^",
+  "head": "67fcf64",
+  "compared_tests": 767,
+  "added_tests": [
+    "test_more.py::BucketTests::test_falsey_validator_is_honoured"
+  ],
+  "removed_tests": [],
+  "unstable_dropped": 5,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "more_itertools/more.py::bucket.__init__",
+    "tests/test_more.py::<module>",
+    "tests/test_more.py::BucketTests.test_falsey_validator_is_honoured",
+    "tests/test_more.py::BucketTests.test_falsey_validator_is_honoured.AllowedKeys.__call__"
+  ],
+  "seconds": {
+    "base": [
+      17.982340097427368,
+      18.264873027801514
+    ],
+    "head": [
+      18.78239607810974,
+      18.387544870376587
+    ]
+  },
+  "changes": [
+    {
+      "kind": "call",
+      "location": "more_itertools/more.py::bucket.__init__",
+      "detail": "newly called from bucket.__getitem__",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::BucketTests::test_basic",
+        "test_more.py::BucketTests::test_getitem_miss_does_not_add_key",
+        "test_more.py::BucketTests::test_in",
+        "test_more.py::BucketTests::test_in_does_not_add_key",
+        "test_more.py::BucketTests::test_keys_are_only_those_seen",
+        "test_more.py::BucketTests::test_list"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "more_itertools/more.py::bucket.__init__",
+      "detail": "newly called from bucket._get_values",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::BucketTests::test_basic",
+        "test_more.py::BucketTests::test_getitem_miss_does_not_add_key",
+        "test_more.py::BucketTests::test_in",
+        "test_more.py::BucketTests::test_in_does_not_add_key",
+        "test_more.py::BucketTests::test_keys_are_only_those_seen",
+        "test_more.py::BucketTests::test_list"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "more_itertools/more.py::bucket.__init__",
+      "detail": "newly called from bucket.__contains__",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::BucketTests::test_in",
+        "test_more.py::BucketTests::test_in_does_not_add_key",
+        "test_more.py::BucketTests::test_keys_are_only_those_seen"
+      ],
+      "before": [],
+      "after": []
+    }
+  ]
+}

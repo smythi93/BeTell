@@ -1,0 +1,25 @@
+{
+  "instance_id": "matplotlib__matplotlib-23299",
+  "test_files": [
+    "lib/matplotlib/tests/test_rcparams.py"
+  ],
+  "plain_base-0_seconds": 5.9407923221588135,
+  "plain_base-0_pytest": 5.21,
+  "plain_base-1_seconds": 3.5396368503570557,
+  "plain_base-1_pytest": 2.95,
+  "plain_base_tail": "==================\nFAILED lib/matplotlib/tests/test_rcparams.py::test_rcparams_update - Failed: ...\nFAILED lib/matplotlib/tests/test_rcparams.py::test_rcparams_init - Failed: DI...\nFAILED lib/matplotlib/tests/test_rcparams.py::test_no_backend_reset_rccontext\n3 failed, 204 passed, 1 skipped in 2.95s\n",
+  "recorded_novalues_seconds": 8.316030979156494,
+  "recorded_novalues_pytest": 6.94,
+  "recorded_base-0_seconds": 11.377115488052368,
+  "recorded_base-0_pytest": 9.68,
+  "recorded_base-1_seconds": 11.273097038269043,
+  "recorded_base-1_pytest": 9.54,
+  "recorded_head-0_seconds": 11.521348237991333,
+  "recorded_head-0_pytest": 9.74,
+  "recorded_head-1_seconds": 11.253509998321533,
+  "recorded_head-1_pytest": 9.46,
+  "changed_files": [
+    "lib/matplotlib/__init__.py"
+  ],
+  "ok": true
+}

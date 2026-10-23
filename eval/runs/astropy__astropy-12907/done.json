@@ -1,0 +1,25 @@
+{
+  "instance_id": "astropy__astropy-12907",
+  "test_files": [
+    "astropy/modeling/tests/test_separable.py"
+  ],
+  "plain_base-0_seconds": 1.9447133541107178,
+  "plain_base-0_pytest": 0.32,
+  "plain_base-1_seconds": 1.2032825946807861,
+  "plain_base-1_pytest": 0.21,
+  "plain_base_tail": "ertionError\n=========================== short test summary info ============================\nFAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]\nFAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]\n2 failed, 13 passed in 0.21s\n",
+  "recorded_novalues_seconds": 1.3757364749908447,
+  "recorded_novalues_pytest": 0.36,
+  "recorded_base-0_seconds": 1.3557071685791016,
+  "recorded_base-0_pytest": 0.43,
+  "recorded_base-1_seconds": 1.4378271102905273,
+  "recorded_base-1_pytest": 0.43,
+  "recorded_head-0_seconds": 1.3504219055175781,
+  "recorded_head-0_pytest": 0.37,
+  "recorded_head-1_seconds": 1.3415331840515137,
+  "recorded_head-1_pytest": 0.38,
+  "changed_files": [
+    "astropy/modeling/separable.py"
+  ],
+  "ok": true
+}

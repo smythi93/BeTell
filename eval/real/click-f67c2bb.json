@@ -1,0 +1,132 @@
+{
+  "base": "f67c2bb^",
+  "head": "f67c2bb",
+  "compared_tests": 2095,
+  "added_tests": [
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-abbreviation inside sentence]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-abbreviation inside truncated sentence]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-digit after dot]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-dot ends text]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-lowercase after dot]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-negative width]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-never split a hyphenated word]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-never split a long word]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-text shorter than the suffix]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-width below the suffix]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[-width fits the suffix only]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-abbreviation inside sentence]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-abbreviation inside truncated sentence]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-digit after dot]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-dot ends text]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-lowercase after dot]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-negative width]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-never split a hyphenated word]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-never split a long word]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-text shorter than the suffix]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-width below the suffix]",
+    "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-width fits the suffix only]"
+  ],
+  "removed_tests": [],
+  "unstable_dropped": 441,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "src/click/utils.py::_make_default_short_help",
+    "tests/test_utils/test_make_default_short_help.py::test_make_default_short_help"
+  ],
+  "seconds": {
+    "base": [
+      21.297006845474243,
+      20.35661792755127
+    ],
+    "head": [
+      21.27061104774475,
+      20.60290217399597
+    ]
+  },
+  "changes": [
+    {
+      "kind": "argument",
+      "location": "src/click/utils.py::_make_default_short_help",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-sentence < max]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-sentence < max]"
+      ],
+      "before": [
+        "(help=str:'123 567 9. aaaa bbb', max_length=int:10)",
+        "(help=str:'\\n\\x08\\n123 567 9. aaaa bbb\\n', max_length=int:10)"
+      ],
+      "after": [
+        "(help=str:'123 567 9. Aaaa bbb', max_length=int:10)",
+        "(help=str:'\\n\\x08\\n123 567 9. Aaaa bbb\\n', max_length=int:10)"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "src/click/utils.py::_make_default_short_help",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_basic.py::test_basic_group",
+        "test_basic.py::test_summary_line",
+        "test_chain.py::test_chaining_help[args0-COMMAND1 [ARGS]... [COMMAND2 [ARGS]...]...]",
+        "test_chain.py::test_chaining_help[args1-ROOT HELP]",
+        "test_commands.py::test_auto_shorthelp",
+        "test_formatting.py::test_removing_multiline_marker",
+        "test_shell_completion.py::test_full_complete[bash-env0-plain,a\\nplain,b\\n]",
+        "test_shell_completion.py::test_full_complete[bash-env1-plain,b\\n]",
+        "test_shell_completion.py::test_full_complete[fish-env4-plain,a\\nplain,b\\tbee\\n]",
+        "test_shell_completion.py::test_full_complete[fish-env5-plain,b\\tbee\\n]",
+        "test_shell_completion.py::test_full_complete[fish-env6-plain,b\\tbee\\n]",
+        "test_shell_completion.py::test_full_complete[powershell-env7-plain\\na\\n_\\nplain\\nb\\nbee\\n]",
+        "test_shell_completion.py::test_full_complete[powershell-env8-plain\\nb\\nbee\\n]",
+        "test_shell_completion.py::test_full_complete[zsh-env2-plain\\na\\n_\\nplain\\nb\\nbee\\n]",
+        "test_shell_completion.py::test_full_complete[zsh-env3-plain\\nb\\nbee\\n]",
+        "test_shell_completion.py::test_zsh_full_complete_with_colons[env0-plain\\na\\n_\\nplain\\nb\\nbee\\nplain\\nc\\\\:d\\ncee:dee\\nplain\\nc:e\\n_\\n]",
+        "test_shell_completion.py::test_zsh_full_complete_with_colons[env1-plain\\nc\\\\:d\\ncee:dee\\nplain\\nc:e\\n_\\n]",
+        "test_shell_completion.py::test_zsh_full_complete_with_colons[env2-plain\\nc\\\\:d\\ncee:dee\\nplain\\nc:e\\n_\\n]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-equal length, no dot]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-ignore dot in word]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-length includes suffix]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-paragraph < max]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-sentence < max]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-truncate]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-empty]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-equal length, no dot]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-ignore dot in word]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-length includes suffix]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-paragraph < max]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-sentence < max]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-truncate]"
+      ],
+      "before": [
+        "L77",
+        "L82",
+        "L85"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "src/click/utils.py::_make_default_short_help",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_basic.py::test_basic_group",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[-sentence < max]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-empty]",
+        "test_utils/test_make_default_short_help.py::test_make_default_short_help[no-wrap mark-sentence < max]"
+      ],
+      "before": [],
+      "after": [
+        "L74->L75",
+        "L75",
+        "L85"
+      ]
+    }
+  ]
+}

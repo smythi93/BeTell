@@ -1,0 +1,45 @@
+{
+  "base": "ca0586d^",
+  "head": "ca0586d",
+  "compared_tests": 766,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 4,
+  "saturated_skipped": 0,
+  "touched_functions": [
+    "more_itertools/more.py::seekable.peek"
+  ],
+  "seconds": {
+    "base": [
+      18.20664691925049,
+      18.035768270492554
+    ],
+    "head": [
+      18.534733057022095,
+      18.98855209350586
+    ]
+  },
+  "changes": [
+    {
+      "kind": "branch",
+      "location": "more_itertools/more.py::seekable.peek",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "test_more.py::SeekableTest::test_maxlen_zero_bool_does_not_drop_items",
+        "test_more.py::SeekableTest::test_maxlen_zero_peek_does_not_drop_items",
+        "test_more.py::SeekableTest::test_peek_default",
+        "test_more.py::SeekableTest::test_repeated_zero_cache_peek_has_bounded_memory",
+        "test_more.py::SeekableTest::test_simple_peeking",
+        "test_more.py::SeekableTest::test_truthiness"
+      ],
+      "before": [
+        "L3131->L3132",
+        "L3132",
+        "L3133"
+      ],
+      "after": []
+    }
+  ]
+}

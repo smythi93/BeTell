@@ -1,0 +1,25 @@
+{
+  "instance_id": "scikit-learn__scikit-learn-14983",
+  "test_files": [
+    "sklearn/model_selection/tests/test_split.py"
+  ],
+  "plain_base-0_seconds": 2.2816407680511475,
+  "plain_base-0_pytest": 1.68,
+  "plain_base-1_seconds": 2.029254198074341,
+  "plain_base-1_pytest": 1.44,
+  "plain_base_tail": "..774755665c88>'\nE         - <sklearn.model_selection._split.RepeatedStratifiedKFold object at 0x774755665c88>\nE         + RepeatedStratifiedKFold(n_repeats=6, n_splits=2, random_state=None)\n\nsklearn/model_selection/tests/test_split.py:991: AssertionError\n2 failed, 105 passed, 122 warnings in 1.44s\n",
+  "recorded_novalues_seconds": 3.9173223972320557,
+  "recorded_novalues_pytest": 3.14,
+  "recorded_base-0_seconds": 9.698835372924805,
+  "recorded_base-0_pytest": 8.88,
+  "recorded_base-1_seconds": 9.672497034072876,
+  "recorded_base-1_pytest": 8.85,
+  "recorded_head-0_seconds": 9.451664447784424,
+  "recorded_head-0_pytest": 8.62,
+  "recorded_head-1_seconds": 9.141839265823364,
+  "recorded_head-1_pytest": 8.3,
+  "changed_files": [
+    "sklearn/model_selection/_split.py"
+  ],
+  "ok": true
+}

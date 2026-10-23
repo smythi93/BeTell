@@ -1,0 +1,2183 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 1,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 8,
+  "saturated_skipped": 1,
+  "touched_functions": [
+    "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.get_object_members"
+  ],
+  "seconds": {
+    "base": [
+      0.8010976314544678,
+      0.817101001739502
+    ],
+    "head": [
+      0.651106595993042,
+      0.6768667697906494
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "tests/test_ext_autodoc_automodule.py::test_empty_all",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/application.py::Sphinx.emit",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "list:[None]"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter._call_format_args",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "str:'()'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.filter_members",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "list:[('bar', <function bar at 0x?>, False), ('baz', <function baz at 0x?>, False), ('foo', <function ..."
+      ],
+      "after": [
+        "list:[]"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.format_name",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "str:'bar'",
+        "str:'baz'",
+        "str:'foo'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "str:'()'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.get_doc",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "list:[['docstring', '']]"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.get_sourcename",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.bar'",
+        "str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.baz'",
+        "str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.foo'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.process_doc",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "str:'docstring'"
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.sort_members",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "list:[(<sphinx.ext.autodoc.FunctionDocumenter object at 0x?>, False), (<sphinx.ext.autodoc.FunctionDoc..."
+      ],
+      "after": [
+        "list:[]"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.sort_members",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "list:[(<sphinx.ext.autodoc.FunctionDocumenter object at 0x?>, False), (<sphinx.ext.autodoc.FunctionDoc..."
+      ],
+      "after": [
+        "list:[]"
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/importer.py::import_object",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "list:[<module 'target.empty_all' f...utodoc/target/empty_all.py'>, <module 'target.empty_all' f...utod..."
+      ],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.get_object_members",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "tuple:(True, [('__all__', []), ('__builtins__', {'__name__'...ct) for help about object.}), ('__cached_..."
+      ],
+      "after": [
+        "tuple:(False, [('__all__', []), ('__builtins__', {'__name__'...ct) for help about object.}), ('__cached..."
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/application.py::Sphinx.emit",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(event=str:'autodoc-before-process-signature', allowed_exceptions=tuple:())"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.__init__",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(directive=DocumenterBridge:<DocumenterBridge>, name=str:'target.empty_all::bar', indent=str:'')",
+        "(directive=DocumenterBridge:<DocumenterBridge>, name=str:'target.empty_all::baz', indent=str:'')",
+        "(directive=DocumenterBridge:<DocumenterBridge>, name=str:'target.empty_all::foo', indent=str:'')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.add_directive_header",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(sig=str:'()')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.add_line",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(line=str:' :module: target.empty_all', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.bar')",
+        "(line=str:' :module: target.empty_all', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.baz')",
+        "(line=str:' :module: target.empty_all', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.foo')",
+        "(line=str:'', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.bar')",
+        "(line=str:'', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.baz')",
+        "(line=str:'', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.foo')",
+        "(line=str:'.. py:function:: bar()', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.bar')",
+        "(line=str:'.. py:function:: baz()', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.baz')",
+        "(line=str:'.. py:function:: foo()', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.foo')",
+        "(line=str:'docstring', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.bar')",
+        "(line=str:'docstring', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.baz')",
+        "(line=str:'docstring', source=str:'/tmp/<pytest-tmp>/ext-autodoc/target/empty_all.py:docstring of target.empty_all.foo')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.generate",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(more_content=NoneType:None, real_modname=str:'target.empty_all', check_module=bool:True, all_members=bool:True)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.sort_members",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(documenters=list:[(<sphinx.ext.autodoc.FunctionDocumenter object at 0x?>, False), (<sphinx.ext.autodoc.FunctionDoc..., order=str:'alphabetical')"
+      ],
+      "after": [
+        "(documenters=list:[], order=str:'alphabetical')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.sort_members",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(documenters=list:[(<sphinx.ext.autodoc.FunctionDocumenter object at 0x?>, False), (<sphinx.ext.autodoc.FunctionDoc..., order=str:'alphabetical')"
+      ],
+      "after": [
+        "(documenters=list:[], order=str:'alphabetical')"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/importer.py::import_object",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(modname=str:'target.empty_all', objpath=list:['bar'], objtype=str:'function', attrgetter=method:<Documenter.get_attr>, warningiserror=bool:True)",
+        "(modname=str:'target.empty_all', objpath=list:['baz'], objtype=str:'function', attrgetter=method:<Documenter.get_attr>, warningiserror=bool:True)",
+        "(modname=str:'target.empty_all', objpath=list:['foo'], objtype=str:'function', attrgetter=method:<Documenter.get_attr>, warningiserror=bool:True)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/ext/autodoc/typehints.py::record_typehints",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(app=SphinxTestApp:<SphinxTestApp buildername='html'>, objtype=str:'function', name=str:'target.empty_all.bar', obj=function:<bar>, options=Options:{'members': <sphinx.ext.autodoc._All object at 0x?>}, args=str:'()', retann=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='html'>, objtype=str:'function', name=str:'target.empty_all.baz', obj=function:<baz>, options=Options:{'members': <sphinx.ext.autodoc._All object at 0x?>}, args=str:'()', retann=NoneType:None)",
+        "(app=SphinxTestApp:<SphinxTestApp buildername='html'>, objtype=str:'function', name=str:'target.empty_all.foo', obj=function:<foo>, options=Options:{'members': <sphinx.ext.autodoc._All object at 0x?>}, args=str:'()', retann=NoneType:None)"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/pycode/ast.py::parse",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(code=str:'def bar():\\n \"\"\"docstring\"\"\"\\n', mode=str:'exec')",
+        "(code=str:'def baz():\\n \"\"\"docstring\"\"\"\\n', mode=str:'exec')",
+        "(code=str:'def foo():\\n \"\"\"docstring\"\"\"\\n', mode=str:'exec')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "argument",
+      "location": "sphinx/util/inspect.py::getdoc",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "(obj=function:<bar>, attrgetter=method:<Documenter.get_attr>, allow_inherited=bool:True, name=str:'bar')",
+        "(obj=function:<baz>, attrgetter=method:<Documenter.get_attr>, allow_inherited=bool:True, name=str:'baz')",
+        "(obj=function:<foo>, attrgetter=method:<Documenter.get_attr>, allow_inherited=bool:True, name=str:'foo')"
+      ],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/application.py::Sphinx.emit",
+      "detail": "no longer called from FunctionDocumenter.format_args",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/config.py::Config.__getattr__",
+      "detail": "no longer called from DocstringSignatureMixin.format_signature",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/config.py::Config.__getattr__",
+      "detail": "no longer called from FunctionDocumenter.format_args",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/config.py::Config.__getattr__",
+      "detail": "no longer called from record_typehints",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::AttributeDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::ClassDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::DataDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::DocstringSignatureMixin._find_signature",
+      "detail": "no longer called from DocstringSignatureMixin.format_signature",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::DocstringSignatureMixin.format_signature",
+      "detail": "no longer called from FunctionDocumenter.format_signature",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::DocstringSignatureMixin.get_doc",
+      "detail": "no longer called from DocstringSignatureMixin._find_signature",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::DocstringSignatureMixin.get_doc",
+      "detail": "no longer called from Documenter.add_content",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.__init__",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.add_directive_header",
+      "detail": "no longer called from FunctionDocumenter.add_directive_header",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.check_module",
+      "detail": "no longer called from Documenter.generate",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.document_members",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.documenters",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+      "detail": "no longer called from DocstringSignatureMixin.format_signature",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.generate",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.get_attr",
+      "detail": "no longer called from Documenter.check_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.get_attr",
+      "detail": "no longer called from import_object",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.get_doc",
+      "detail": "no longer called from DocstringSignatureMixin.get_doc",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.get_sourcename",
+      "detail": "no longer called from FunctionDocumenter.add_directive_header",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.import_object",
+      "detail": "no longer called from Documenter.generate",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.parse_name",
+      "detail": "no longer called from Documenter.generate",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.sort_members",
+      "detail": "no longer called from Documenter.sort_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::ExceptionDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.add_directive_header",
+      "detail": "no longer called from Documenter.generate",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.document_members",
+      "detail": "no longer called from Documenter.generate",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.format_args",
+      "detail": "no longer called from Documenter._call_format_args",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.format_signature",
+      "detail": "no longer called from Documenter.generate",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::MethodDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleLevelDocumenter.resolve_name",
+      "detail": "no longer called from Documenter.parse_name",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::NewTypeAttributeDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::NewTypeDataDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::Options.__getattr__",
+      "detail": "no longer called from Documenter.check_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/__init__.py::PropertyDocumenter.can_document_member",
+      "detail": "no longer called from Documenter.document_members",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/importer.py::mangle",
+      "detail": "no longer called from import_object",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/type_comment.py::get_type_comment",
+      "detail": "no longer called from update_annotations_using_type_comments",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/ext/autodoc/type_comment.py::update_annotations_using_type_comments",
+      "detail": "no longer called from EventManager.emit",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/pycode/ast.py::parse",
+      "detail": "no longer called from get_type_comment",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::_should_unwrap",
+      "detail": "no longer called from signature",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isNewType",
+      "detail": "no longer called from NewTypeDataDocumenter.can_document_member",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::is_singledispatch_function",
+      "detail": "no longer called from FunctionDocumenter.format_signature",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isattributedescriptor",
+      "detail": "no longer called from AttributeDocumenter.can_document_member",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isclassmethod",
+      "detail": "no longer called from unwrap_all",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::iscoroutinefunction",
+      "detail": "no longer called from FunctionDocumenter.add_directive_header",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::iscoroutinefunction",
+      "detail": "no longer called from unwrap_all",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isdescriptor",
+      "detail": "no longer called from isattributedescriptor",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isfunction",
+      "detail": "no longer called from FunctionDocumenter.can_document_member",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isfunction",
+      "detail": "no longer called from isattributedescriptor",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::ispartial",
+      "detail": "no longer called from unpartial",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::ispartial",
+      "detail": "no longer called from unwrap_all",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isproperty",
+      "detail": "no longer called from PropertyDocumenter.can_document_member",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isroutine",
+      "detail": "no longer called from MethodDocumenter.can_document_member",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::isstaticmethod",
+      "detail": "no longer called from unwrap_all",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::safe_getattr",
+      "detail": "no longer called from _should_unwrap",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::safe_getattr",
+      "detail": "no longer called from isNewType",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::safe_getattr",
+      "detail": "no longer called from isdescriptor",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::signature",
+      "detail": "no longer called from FunctionDocumenter.format_args",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::signature",
+      "detail": "no longer called from record_typehints",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::stringify_signature",
+      "detail": "no longer called from FunctionDocumenter.format_args",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::unpartial",
+      "detail": "no longer called from Documenter.check_module",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::unwrap",
+      "detail": "no longer called from isattributedescriptor",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::unwrap_all",
+      "detail": "no longer called from iscoroutinefunction",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::unwrap_all",
+      "detail": "no longer called from isfunction",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "sphinx/util/inspect.py::unwrap_all",
+      "detail": "no longer called from isroutine",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::AttributeDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L2351->L2353",
+        "L2353->L2358",
+        "L2358->exit",
+        "entry->L2351"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::ClassDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1445->exit",
+        "entry->L1445"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::DataDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1892->exit",
+        "entry->L1892"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::DocstringSignatureMixin._find_signature",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1183->L1189",
+        "L1189->L1190",
+        "L1190->L1195",
+        "L1195->L1196",
+        "L1196->L1197",
+        "L1197->L1198",
+        "L1198->L1199",
+        "L1199->L1200",
+        "L1199->L1244",
+        "L1200->L1201",
+        "L1201->L1203",
+        "L1201->L1205",
+        "L1203->L1240",
+        "L1205->L1209",
+        "L1209->L1212",
+        "L1212->L1213",
+        "L1213->L1215",
+        "L1215->L1218",
+        "L1218->L1219",
+        "L1219->L1200",
+        "L1240->L1199",
+        "L1244->exit",
+        "entry->L1183"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::DocstringSignatureMixin.format_signature",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1256->L1259",
+        "L1259->L1260",
+        "L1260->L1262",
+        "L1262->L1263",
+        "L1263->L1266",
+        "L1266->exit",
+        "entry->L1256"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::DocstringSignatureMixin.get_doc",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1247->L1251",
+        "L1251->L1252",
+        "L1251->L1253",
+        "L1252->exit",
+        "L1253->exit",
+        "entry->L1247"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.add_content",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L603->L604",
+        "L604->L605",
+        "L605->L615"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.add_directive_header",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L536->L539",
+        "L539->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.check_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L446->L449",
+        "L449->L450",
+        "L450->L451",
+        "L451->L453",
+        "L453->exit",
+        "entry->L446"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.document_members",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L830->L831",
+        "L831",
+        "L831->L832",
+        "L831->L833",
+        "L831->exit",
+        "L832->L831",
+        "L833->L837",
+        "L837->L840",
+        "L837->exit",
+        "L840->L841",
+        "L840->L842",
+        "L841->L840",
+        "L842->L843",
+        "L843->L830",
+        "L848->L849",
+        "L849->L848",
+        "L849->L850",
+        "L850->L851",
+        "L851->L849",
+        "entry->L831",
+        "entry->L837"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.documenters",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L356->exit",
+        "entry->L356"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.filter_members",
+      "detail": "newly taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": [
+        "L787->L789",
+        "L789->L793"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.filter_members",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L787->L793",
+        "L807->L808",
+        "L808->L703"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L498->L499",
+        "L499->L500",
+        "L500->L508",
+        "L514->L515",
+        "L515->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.generate",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L938->L939",
+        "L939->L942"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.get_sourcename",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L578->L579",
+        "L578->L582",
+        "L579->L578",
+        "L582->L586"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.parse_name",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L394->L395",
+        "L395->L396",
+        "L396->L401"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::Documenter.sort_members",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L878->exit",
+        "entry->L878"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::ExceptionDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1733->exit",
+        "entry->L1733"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.add_directive_header",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1325->L1326",
+        "L1326->L1328",
+        "L1328->exit",
+        "entry->L1325"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1298",
+        "L1298->exit",
+        "entry->L1298"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.document_members",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1322->exit",
+        "entry->L1322"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.format_args",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1302->L1305",
+        "L1305->L1306",
+        "L1306->L1307",
+        "L1307->L1308",
+        "L1308->L1316",
+        "L1316->L1319",
+        "L1319->exit",
+        "entry->L1302"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.format_signature",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1332->L1333",
+        "L1333->L1334",
+        "L1333->L1339",
+        "L1334->L1333",
+        "L1339->L1340",
+        "L1340->L1341",
+        "L1341->L1343",
+        "L1343->L1355",
+        "L1355->L1364",
+        "L1364->exit",
+        "entry->L1332"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::MethodDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L2020->L2021",
+        "L2020->exit",
+        "L2021->L2020",
+        "entry->L2020"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L998->exit",
+        "entry->L998"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleLevelDocumenter.resolve_name",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1127->L1138",
+        "L1138->exit",
+        "entry->L1127"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::NewTypeAttributeDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L2547->exit",
+        "entry->L2547"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::NewTypeDataDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L2005->exit",
+        "entry->L2005"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::PropertyDocumenter.can_document_member",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L2515->exit",
+        "entry->L2515"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/importer.py::import_object",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L104->L105",
+        "L105->L106",
+        "L106->L107",
+        "L107->L108",
+        "L108->L109",
+        "L109->L110",
+        "L110->L104",
+        "L78->L79",
+        "L79->L83"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/importer.py::mangle",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L32->L33",
+        "L33->L38",
+        "L38->exit",
+        "entry->L32"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/type_comment.py::get_type_comment",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L101->L102",
+        "L102->L104",
+        "L104->L108",
+        "L108->exit",
+        "L93->L94",
+        "L94->L95",
+        "L95->L101",
+        "entry->L93"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/type_comment.py::update_annotations_using_type_comments",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L117->L118",
+        "L118->L119",
+        "L119->exit",
+        "entry->L117"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/typehints.py::record_typehints",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L27->L28",
+        "L28->L29",
+        "L29->L30",
+        "L30->L31",
+        "L31->L34",
+        "L34->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/pycode/__init__.py::ModuleAnalyzer.for_module",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L112->L113",
+        "L113->L114",
+        "L114->L116",
+        "L116->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::_should_unwrap",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L504->L505",
+        "L504->L510",
+        "L505->L504",
+        "L510->exit",
+        "entry->L504"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isNewType",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L211->L212",
+        "L212->L213",
+        "L213->L216",
+        "L216->exit",
+        "entry->L211"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::is_singledispatch_function",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L328->L329",
+        "L328->L334",
+        "L329->L328",
+        "L334->exit",
+        "entry->L328"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isattributedescriptor",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L297->L300",
+        "L300->L302",
+        "L302->L303",
+        "L303->L305",
+        "L305->exit",
+        "entry->L297"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isclassmethod",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L247->L249",
+        "L249->L252",
+        "L252->exit",
+        "entry->L247"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::iscoroutinefunction",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L364->L365",
+        "L364->exit",
+        "L365->L370",
+        "L370->exit",
+        "entry->L364"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isdescriptor",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L276->L277",
+        "L277->L278",
+        "L278->exit",
+        "entry->L276"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isfunction",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L348->exit",
+        "entry->L348"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isproperty",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L375->L376",
+        "L376->L377",
+        "L377->L380",
+        "L380->exit",
+        "entry->L375"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isroutine",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L358->exit",
+        "entry->L358"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::isstaticmethod",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L257->L259",
+        "L259->L271",
+        "L271->exit",
+        "entry->L257"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::signature",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L521->L522",
+        "L522->L527",
+        "L527->L528",
+        "L528->L529",
+        "L529->L532",
+        "L532->L536",
+        "L536->L537",
+        "L537->L548",
+        "L548->L550",
+        "L550->L551",
+        "L551->L554",
+        "L554->L561",
+        "L561->L575",
+        "L575->L576",
+        "L575->exit",
+        "L576->L575",
+        "entry->L521"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::stringify_signature",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L632->L633",
+        "L633->L634",
+        "L634->L665",
+        "L665->L669",
+        "L669->L672",
+        "L672->exit",
+        "entry->L632"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::unpartial",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L234->L237",
+        "L237->exit",
+        "entry->L234"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::unwrap",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L113->L114",
+        "L114->L118",
+        "L118->exit",
+        "entry->L113"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/util/inspect.py::unwrap_all",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L130->L132",
+        "L132->L134",
+        "L134->L136",
+        "L136->L138",
+        "L138->L141",
+        "L141->exit",
+        "entry->L130"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.get_object_members",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [],
+      "after": [
+        "L1082->L1083",
+        "L1082->L1086",
+        "L1083->L1084",
+        "L1084->L1082",
+        "L1086->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "sphinx/ext/autodoc/__init__.py::ModuleDocumenter.get_object_members",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "tests/test_ext_autodoc_automodule.py::test_empty_all"
+      ],
+      "before": [
+        "L1080->exit"
+      ],
+      "after": []
+    }
+  ]
+}

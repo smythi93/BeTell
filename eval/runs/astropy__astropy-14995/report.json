@@ -1,0 +1,257 @@
+{
+  "base": "base",
+  "head": "gold",
+  "compared_tests": 180,
+  "added_tests": [],
+  "removed_tests": [],
+  "unstable_dropped": 4,
+  "saturated_skipped": 1,
+  "touched_functions": [
+    "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic_mask"
+  ],
+  "seconds": {
+    "base": [
+      12.324225425720215,
+      12.348047018051147
+    ],
+    "head": [
+      12.232356548309326,
+      12.497517108917236
+    ]
+  },
+  "changes": [
+    {
+      "kind": "outcome",
+      "location": "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic",
+      "detail": "failed -> passed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic",
+      "detail": "no longer raised: TypeError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._prepare_then_do_arithmetic",
+      "detail": "no longer raised: TypeError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin.multiply",
+      "detail": "no longer raised: TypeError",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "exception",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic_mask",
+      "detail": "no longer raised: TypeError",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "return",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": [
+        "tuple:(array([[0, 1, 0], [1, 0, 1], [0, 1, 0]]), {'mask': array([[ 0, 1, 64], [ 8, 0, 1], [ 2, 1, 0]]),...",
+        "tuple:(array([[0, 1, 0], [1, 0, 1], [0, 1, 0]]), {'mask': array([[64, 1, 64], [10, 1, 1], [10, 1, 2]]),...",
+        "tuple:(array([[0., 1., 0.], [1., 0., 1.], [0., 1., 0.]]), {'mask': array([[ 0, 1, 64], [ 8, 0, 1], [ 2,..."
+      ]
+    },
+    {
+      "kind": "return",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic_mask",
+      "detail": "values changed",
+      "outside_diff": false,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": [
+        "ndarray:array([[ 0, 1, 64], [ 8, 0, 1], [ 2, 1, 0]])",
+        "ndarray:array([[64, 1, 64], [10, 1, 1], [10, 1, 2]])"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "astropy/nddata/nddata.py::NDData.__init__",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": [
+        "(data=ndarray:array([[0, 1, 0], [1, 0, 1], [0, 1, 0]]), uncertainty=NoneType:None, mask=ndarray:array([[64, 1, 0], [ 2, 1, 0], [ 8, 0, 2]]), wcs=NoneType:None, meta=NoneType:None, unit=NoneType:None, copy=bool:False, psf=NoneType:None)",
+        "(data=ndarray:array([[0, 1, 0], [1, 0, 1], [0, 1, 0]]), uncertainty=NoneType:None, mask=ndarray:array([[64, 1, 64], [10, 1, 1], [10, 1, 2]]), wcs=NoneType:None, meta=NoneType:None, unit=NoneType:None, copy=bool:False, psf=NoneType:None)",
+        "(data=ndarray:array([[0., 1., 0.], [1., 0., 1.], [0., 1., 0.]]), uncertainty=NoneType:None, mask=ndarray:array([[ 0, 1, 64], [ 8, 0, 1], [ 2, 1, 0]]), wcs=NoneType:None, meta=NoneType:None, unit=NoneType:None, copy=bool:False, psf=NoneType:None)"
+      ]
+    },
+    {
+      "kind": "argument",
+      "location": "astropy/nddata/nddata.py::NDData.mask",
+      "detail": "values changed",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": [
+        "(value=ndarray:array([[64, 1, 0], [ 2, 1, 0], [ 8, 0, 2]]))",
+        "(value=ndarray:array([[64, 1, 64], [10, 1, 1], [10, 1, 2]]))"
+      ]
+    },
+    {
+      "kind": "call",
+      "location": "astropy/nddata/nddata.py::NDData.__repr__",
+      "detail": "no longer called from a test",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/nddata/nddata.py::NDData.data",
+      "detail": "no longer called from NDData.__repr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "call",
+      "location": "astropy/nddata/nddata.py::NDData.unit",
+      "detail": "no longer called from NDData.__repr__",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic_mask",
+      "detail": "newly taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_arithmetics_data_masks[True-None]",
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [],
+      "after": [
+        "L524->exit"
+      ]
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic_mask",
+      "detail": "no longer taken",
+      "outside_diff": false,
+      "silent": true,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_arithmetics_data_masks[True-None]"
+      ],
+      "before": [
+        "L527->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._arithmetic",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [
+        "L335->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/nddata/mixins/ndarithmetic.py::NDArithmeticMixin._prepare_then_do_arithmetic",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [
+        "L731->exit"
+      ],
+      "after": []
+    },
+    {
+      "kind": "branch",
+      "location": "astropy/nddata/nddata.py::NDData.__repr__",
+      "detail": "no longer taken",
+      "outside_diff": true,
+      "silent": false,
+      "tests": [
+        "astropy/nddata/mixins/tests/test_ndarithmetic.py::test_nddata_bitmask_arithmetic"
+      ],
+      "before": [
+        "L305->L306",
+        "L306->L307",
+        "L307->L309",
+        "L309->exit",
+        "entry->L305"
+      ],
+      "after": []
+    }
+  ]
+}
